@@ -73,7 +73,7 @@
                 <span class="avatar"><img class="round" src="/app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
                   <span class="avatar-status-online"></span></span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-              <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
+             
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
             </div>
@@ -112,9 +112,9 @@
           </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="services.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="billings.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Billings  </span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="billings.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Email">Billings  </span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
           </li>
             </ul>
           </li>
@@ -139,7 +139,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#">Client Management</a>
+                    <li class="breadcrumb-item"><a href="client.html">Client Management</a>
                     </li>
                     <li class="breadcrumb-item active">View Clients
                     </li>
@@ -212,7 +212,7 @@
            
             <td>
                  <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
-                 <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="View attachments"><i data-feather="paperclip"></i></a>
+                 <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
               <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
               <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
             </td>
@@ -245,12 +245,12 @@
             <div class="row">
               <div class="col-md-6 col-12">
                 <div class="form-group">
-                  <label for="first-name-column">Full Name</label>
+                  <label for="full-name-column">Full Name</label>
                   <input
                     type="text"
-                    id="first-name-column"
+                    id="full-name-column"
                     class="form-control"
-                    placeholder="First Name"
+                    placeholder="Full Name"
                     name="fname-column"
                   />
                 </div>
@@ -287,7 +287,7 @@
                     id="country-floating"
                     class="form-control"
                     name="country-floating"
-                    placeholder="Faculty"
+                    placeholder="Phone#"
                   />
                 </div>
               </div>
@@ -303,13 +303,13 @@
               </div>
               <div class="col-md-6 col-12">
                 <div class="form-group">
-                  <label for="email-id-column">Assigned to</label>
+                  <label for="email-id-column">Assigned To</label>
                   <input
                     type="email"
                     id="email-id-column"
                     class="form-control"
                     name="email-id-column"
-                    placeholder="Phone #"
+                    placeholder="Assigned to"
                   />
                 </div>
               </div>
@@ -324,7 +324,7 @@
         </div>
         <div class="modal-footer">
           <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-          <input type="submit" class="btn btn-success" value="Add">
+          <input type="submit" class="btn btn-success" value="Add Client">
         </div>
       </form>
     </div>
@@ -340,89 +340,78 @@
     <div class="modal-content">
       <form>
         <div class="modal-header bg-primary" >            
-          <h4 class="modal-title" style="color:white !important;">Edit Staff</h4>
+          <h4 class="modal-title" style="color:white !important;">Edit Client</h4>
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
         <div class="modal-body">          
       <section id="multiple-column-form">
   <div class="row">
     <div class="col-12">
-       
-          <form class="form">
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="first-name-column">First Name</label>
-                  <input
-                    type="text"
-                    id="first-name-column"
-                    class="form-control"
-                    placeholder="First Name"
-                    name="fname-column"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="last-name-column">Last Name</label>
-                  <input
-                    type="text"
-                    id="last-name-column"
-                    class="form-control"
-                    placeholder="Last Name"
-                    name="lname-column"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                 <div class="form-group">
-                  <label for="email-id-column">Email</label>
-                  <input
-                    type="email"
-                    id="email-id-column"
-                    class="form-control"
-                    name="email-id-column"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="country-floating">Faculty</label>
-                  <input
-                    type="text"
-                    id="country-floating"
-                    class="form-control"
-                    name="country-floating"
-                    placeholder="Faculty"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="company-column">Position</label>
-               <select class="form-control" id="basicSelect">
-              <option>Tutorial Assistant</option>
-              <option>Lecturer</option>
-              <option>Senior Lecturer</option>
-            </select>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="email-id-column">Phone #</label>
-                  <input
-                    type="email"
-                    id="email-id-column"
-                    class="form-control"
-                    name="email-id-column"
-                    placeholder="Phone #"
-                  />
-                </div>
-              </div>
-             
+      <form class="form">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="full-name-column">Full Name</label>
+              <input
+                type="text"
+                id="full-name-column"
+                class="form-control"
+                placeholder="Full Name"
+                name="fname-column"
+              />
             </div>
-          </form>
+          </div>
+          
+          <div class="col-md-6 col-12">
+             <div class="form-group">
+              <label for="email-id-column">Email</label>
+              <input
+                type="email"
+                id="email-id-column"
+                class="form-control"
+                name="email-id-column"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="country-floating">Phone Number</label>
+              <input
+                type="text"
+                id="country-floating"
+                class="form-control"
+                name="country-floating"
+                placeholder="Phone#"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="company-column">Service</label>
+           <select class="form-control" id="basicSelect">
+          <option>Choose Service</option>
+          <option>Trade Mark</option>
+          <option>Cases</option>
+        </select>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="email-id-column">Assigned To</label>
+              <input
+                type="email"
+                id="email-id-column"
+                class="form-control"
+                name="email-id-column"
+                placeholder="Assigned to"
+              />
+            </div>
+          </div>
+         
+        </div>
+      </form>  
+          
         
       
     </div>
@@ -443,7 +432,7 @@
     <div class="modal-content">
       <form>
         <div class="modal-header bg-primary">            
-          <h4 class="modal-title" style="color : white !important;">Delete Staff</h4>
+          <h4 class="modal-title" style="color : white !important;">Delete Client</h4>
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
         <div class="modal-body">          
