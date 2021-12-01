@@ -104,7 +104,13 @@
           </li>
           
             <li class="  nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Client</span></a>
-          </li>
+          
+          <ul class="menu-content">
+                
+            <li class="  nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
+            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a>   </li>
+           </ul>
+        </li>
           <li class=" active nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Application</span></a>
          
           </li>
@@ -159,7 +165,7 @@
   <div class="container-xl"> 
     <div class="table-responsive">
       <div class="table-wrapper">
-        <div class="table-title">
+        <div class="table-title  "style="background-color: #5a5a59;">
           <div class="row">
   
             <div class="col-sm-6">
@@ -169,7 +175,7 @@
               <button type="button" class="btn btn-sm btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal">
                 Add Application
                 </button>  
-              <button type="button" class="btn btn-sm btn-warning text-white " onclick="$('#create_service').show('fast');">
+              <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
                 Export
                 </button>
                 
@@ -211,10 +217,11 @@
            
              
               <td>
-                   <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
-                   <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
-                <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
-                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
+                <!-- <a class="edit" data-toggle="modal" data-target="#editEmployeeModal"><i data-feather="edit"></i></a> -->
+                   <a style="color: green;" data-toggle="modal" data-target="#editEmployeeModal" title="Assign Advocate"><i data-feather="send" ></i></a>
+                   <a style="color: blue;" data-toggle="modal" data-target="#editEmployeeModal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                <a  class="edit" data-toggle="modal"data-target="#editEmployeeModal" title="Edit Client"><i data-feather="edit"> </i></a>
+                <a  class="delete" data-toggle="modal" data-target="#editEmployeeModal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
               </td>
             </tr>
        
@@ -245,52 +252,40 @@
               <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="full-name-column">Full Name</label>
-                    <input
-                      type="text"
-                      id="full-name-column"
-                      class="form-control"
-                      placeholder="Full Name"
-                      name="fname-column"
-                    />
+                    <label for="company-column">Client</label>
+                 <select class="form-control" id="clientType">
+                <option>Choose Client Type</option>
+                <option>Individual</option>
+                <option>Company</option>
+              </select>
                   </div>
                 </div>
-                <!-- <div class="col-md-6 col-12">
+
+                <div class="col-md-6 col-12" id="individuals" style="display: none;">
                   <div class="form-group">
-                    <label for="last-name-column">Last Name</label>
-                    <input
-                      type="text"
-                      id="last-name-column"
-                      class="form-control"
-                      placeholder="Last Name"
-                      name="lname-column"
-                    />
-                  </div>
-                </div> -->
-                <div class="col-md-6 col-12">
-                   <div class="form-group">
-                    <label for="email-id-column">Email</label>
-                    <input
-                      type="email"
-                      id="email-id-column"
-                      class="form-control"
-                      name="email-id-column"
-                      placeholder="Email"
-                    />
+                    <label for="company-column">Individuals</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose Individual</option>
+                <option>Sabi IP</option>
+                <option>Mohhamed Baraka</option>
+                <option>Emmanuel Mrema</option>
+                <option>Justine Mosha</option>
+              </select>
                   </div>
                 </div>
-                <div class="col-md-6 col-12">
+                
+                <div class="col-md-6 col-12" id="companies" style="display: none;">
                   <div class="form-group">
-                    <label for="country-floating">Phone Number</label>
-                    <input
-                      type="text"
-                      id="country-floating"
-                      class="form-control"
-                      name="country-floating"
-                      placeholder="Phone#"
-                    />
+                    <label for="company-column">Companies</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose Company</option>
+                <option>Mo Company</option>
+                <option>Mrema Co Limited</option>
+                <option>Mokha Agents Limited</option>
+              </select>
                   </div>
                 </div>
+                
                 <div class="col-md-6 col-12">
                   <div class="form-group">
                     <label for="company-column">Service</label>
@@ -304,13 +299,12 @@
                 <div class="col-md-6 col-12">
                   <div class="form-group">
                     <label for="email-id-column">Assigned To</label>
-                    <input
-                      type="email"
-                      id="email-id-column"
-                      class="form-control"
-                      name="email-id-column"
-                      placeholder="Assigned to"
-                    />
+                    <select class="form-control" id="basicSelect">
+                      <option>Choose Advocate</option>
+                      <option>Augistobe Mrema</option>
+                      <option>Silvesta Mshana</option>
+                    </select>
+                    
                   </div>
                 </div>
                
@@ -324,7 +318,7 @@
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-success" value="Add Client">
+            <input type="submit" class="btn btn-success" value="Add Application">
           </div>
         </form>
       </div>
@@ -519,9 +513,24 @@
           feather.replace({ width: 14, height: 14 });
         }
       })
+
+      $('#clientType').on('change', function (e) {
+        
+          var optionSelected = $("option:selected", this);
+          var valueSelected = this.value;
+
+          if (valueSelected == "Individual") {
+            $("#individuals").show();
+            $("#companies").hide();
+
+          } else if (valueSelected == "Company"){
+            $("#companies").show();
+            $("#individuals").hide();
+          }
+
+      });
     </script>
   </body>
   <!-- END: Body-->
-
 
 </html>

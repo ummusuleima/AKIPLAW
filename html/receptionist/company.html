@@ -51,34 +51,29 @@
   <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-dark navbar-shadow ">
-      <div class="navbar-container d-flex content">
-        <div class="bookmark-wrapper d-flex align-items-center">
-          <ul class="nav navbar-nav d-xl-none">
-            <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow btb btn-dark3">
+        <div class="navbar-container d-flex content">
+          <div class="bookmark-wrapper d-flex align-items-center">
+            <ul class="nav navbar-nav d-xl-none">
+              <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+            </ul>
+            <h2 style="margin-top: 10px!important;color:white" ; >AKIPLAW - CASE MANAGEMENT SYSTEM</h2>
+          </div>
+          <ul class="nav navbar-nav align-items-center ml-auto">
+            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"style="color:white" data-feather="moon"></i></a></li>
+  
+            <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder " style="color:white">AKIPLAW</span><span class="user-status" style= "color:white">Admin</span></div><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
+              
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+               
+                  <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+              </div>
+            </li>
           </ul>
-          <h2 style="margin-top: 10px!important;color:white" ; >AKIPLAW - CASE MANAGEMENT SYSTEM</h2>
-       
         </div>
-        <ul class="nav navbar-nav align-items-center ml-auto">
-       
-          <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
-          <li class="nav-item dropdown dropdown-user">
-            <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="user-nav d-sm-flex d-none">
-                <span class="user-name font-weight-bolder " style="color:white" >Akiplaw</span>
-                <span class="user-status" style="color:white">Admin</span></div>
-                <span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40">
-                  <span class="avatar-status-online"></span></span></a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-             
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
     
     
     <!-- END: Header-->
@@ -107,14 +102,14 @@
          
           </li>
           
-            <li class=" active nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Client</span></a>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Client</span></a>
           
           <ul class="menu-content">
                 
             <li class="  nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
-            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a>   </li>
+            <li class=" active nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a>   </li>
            </ul>
-          </li>
+        </li>
           <li class="   nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="Application">Manage Application</span></a>
           </li>
           
@@ -171,11 +166,11 @@
           <div class="row">
   
             <div class="col-sm-6">
-              <h2 style=" color : white !important;"  >Manage Client </h2>
+              <h2 style=" color : white !important;"  >Manage Company </h2>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-sm btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal">
-                Add Client
+                Add Company
                 </button>  
               <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
                 Export
@@ -195,13 +190,13 @@
                   <label for="selectAll"></label>
                 </span>
               </th>
-              <th>Full Name</th>
-               <th>Date of Birth</th>
-               <th>Gender</th>
-               <th>Place of Birth</th>
-               <th>Nationality</th>
-               <th>Marital Status</th>
-               <th>Contacts</th>
+              <th>Company ID</th>
+              <th>Company Name</th>
+               <th>Email Adress</th>
+               <th>Telephone Number</th>
+               <th>Country</th>
+               <th>Fax No</th>
+               <th>Web Page</th>s
                <th>Status</th>
               <th>Actions</th>
             </tr>
@@ -214,13 +209,13 @@
                   <label for="checkbox1"></label>
                 </span>
               </td>
-              <td>Sabi IP</td>
-               <td>12 dec/1990</td>
-                <td>Male</td>
-                 <td>Kilimanjaro</td>
-                 <td>Tanzanian</td>
-                 <td>Devoced</td>
-                 <td>0778-965434</td>
+              <td>111</td>
+              <td>Sabi & co Limited</td>
+               <td>Sabi&co @gmail.com</td>
+                <td>0765435623</td>
+                 <td>Tanzania</td>
+                 <td>67433322</td>
+                 <td>www.sabi.co.tz</td>
                  <td>Pending</td>
               <td>
                    <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
@@ -245,7 +240,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color:#fff !important;">Add Client</h4>
+            <h4 class="modal-title" style="color:#fff !important;">Add Company</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -257,12 +252,12 @@
               <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="full-name-column">Full Name</label>
+                    <label for="full-name-column">Company Name</label>
                     <input
                       type="text"
                       id="full-name-column"
                       class="form-control"
-                      placeholder="Full Name"
+                      placeholder="Company Name"
                       name="fname-column"
                     />
                   </div>
@@ -281,17 +276,17 @@
                 </div> -->
                 <div class="col-md-6 col-12">
                    <div class="form-group">
-                    <label for="email-id-column">Date Of Birth</label>
+                    <label for="email-id-column">Email Adress</label>
                     <input
                       type="date"
                       id="email-id-column"
                       class="form-control"
                       name="email-id-column"
-                      placeholder="Date Of Birth"
+                      placeholder="Email Adress"
                     />
                   </div>
                 </div>
-                <div class="col-md-6 col-12">
+                <!-- <div class="col-md-6 col-12">
                   <div class="form-group">
                     <label for="company-column">Gender</label>
                  <select class="form-control" id="basicSelect">
@@ -300,33 +295,33 @@
                 <option>Female</option>
               </select>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="country-floating">Place of Birth</label>
+                    <label for="country-floating">Telephone No</label>
                     <input
                       type="text"
                       id="country-floating"
                       class="form-control"
                       name="country-floating"
-                      placeholder="Place Of Birth"
+                      placeholder="Phone No#"
                     />
                   </div>
                 </div>
                 
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="email-id-column">Nationality</label>
+                    <label for="email-id-column">Country</label>
                     <input
                       type="text"
                       id="email-id-column"
                       class="form-control"
                       name="email-id-column"
-                      placeholder="Nationality"
+                      placeholder="Country"
                     />
                   </div>
               </div>
-                  <div class="col-md-6 col-12">
+                  <!-- <div class="col-md-6 col-12">
                       <div class="form-group">
                         <label for="company-column">Marital Status</label>
                      <select class="form-control" id="basicSelect">
@@ -336,19 +331,31 @@
                     <option>Single</option>
                   </select>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-12">
                       <div class="form-group">
-                        <label for="email-id-column">Contacts</label>
+                        <label for="email-id-column">Fax No</label>
                         <input
                           type="contacts"
                           id="email-id-column"
                           class="form-control"
                           name="email-id-column"
-                          placeholder="Nationality"
+                          placeholder="Fax No#"
                         />
                       </div>
                   </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group">
+                      <label for="email-id-column">Web Page</label>
+                      <input
+                        type="contacts"
+                        id="email-id-column"
+                        class="form-control"
+                        name="email-id-column"
+                        placeholder="web page"
+                      />
+                    </div>
+                </div>
                 
                
               </div>
@@ -361,7 +368,7 @@
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-success" value="Add Client">
+            <input type="submit" class="btn btn-success" value="Add Company">
           </div>
         </form>
       </div>
@@ -372,7 +379,7 @@
   
   
   <!-- Edit Modal HTML -->
-  <div id="editEmployeeModal" class="modal fade">
+  <!-- <div id="editEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
@@ -462,14 +469,14 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Delete Modal HTML -->
   <div id="deleteEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color : white !important;">Delete Client</h4>
+            <h4 class="modal-title" style="color : white !important;">Delete Company</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
