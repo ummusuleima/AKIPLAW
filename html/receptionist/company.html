@@ -107,7 +107,7 @@
           <ul class="menu-content">
                 
             <li class="  nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
-            <li class=" active nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a>   </li>
+            <li class=" active nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
            </ul>
         </li>
           <li class="   nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="Application">Manage Application</span></a>
@@ -166,11 +166,11 @@
           <div class="row">
   
             <div class="col-sm-6">
-              <h2 style=" color : white !important;"  >Manage Company </h2>
+              <h2 style=" color : white !important;"  >Manage Entities </h2>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-sm btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal">
-                Add Company
+                Add Entity
                 </button>  
               <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
                 Export
@@ -190,8 +190,8 @@
                   <label for="selectAll"></label>
                 </span>
               </th>
-              <th>Company ID</th>
-              <th>Company Name</th>
+              <th>Entity ID</th>
+              <th>Entity Name</th>
                <th>Email Adress</th>
                <th>Telephone Number</th>
                <th>Country</th>
@@ -218,7 +218,7 @@
                  <td>www.sabi.co.tz</td>
                  <td>Pending</td>
               <td>
-                   <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
+                   
                    <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
                 <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
@@ -240,7 +240,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color:#fff !important;">Add Company</h4>
+            <h4 class="modal-title" style="color:#fff !important;">Add Entity</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -250,14 +250,28 @@
          
             <form class="form">
               <div class="row">
+                
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="full-name-column">Company Name</label>
+                    <label for="full-name-column">Entity Type</label>
+                    <select class="form-control" id="basicSelect">
+                      <option>Choose entity</option>
+                      <option>Company</option>
+                      <option>Government</option>
+                      <option>Partnership</option>
+                      <option>NGO's</option>
+                      <option>Associations</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="full-name-column">Entity Name</label>
                     <input
                       type="text"
                       id="full-name-column"
                       class="form-control"
-                      placeholder="Company Name"
+                      placeholder="entity Name"
                       name="fname-column"
                     />
                   </div>
@@ -368,7 +382,7 @@
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-success" value="Add Company">
+            <input type="submit" class="btn btn-success" value="Add Entity">
           </div>
         </form>
       </div>

@@ -108,7 +108,7 @@
           <ul class="menu-content">
                 
             <li class="  nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
-            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a>   </li>
+            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
            </ul>
         </li>
           <li class=" active nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Application</span></a>
@@ -184,7 +184,7 @@
             
           </div>
         </div>
-        <table class="table table-striped table-hover" id="datatable"> 
+        <!-- <table class="table table-striped table-hover" id="datatable"> 
           <thead>
             <tr>
               <th>
@@ -217,17 +217,98 @@
            
              
               <td>
-                <!-- <a class="edit" data-toggle="modal" data-target="#editEmployeeModal"><i data-feather="edit"></i></a> -->
+              
                    <a style="color: green;" data-toggle="modal" data-target="#editEmployeeModal" title="Assign Advocate"><i data-feather="send" ></i></a>
+                   <a style="color: blue;" data-toggle="modal" data-target="#editEmployeeModal" title="History"><i data-feather="archive"></i></a>
                    <a style="color: blue;" data-toggle="modal" data-target="#editEmployeeModal" title="Add attachments"><i data-feather="paperclip"></i></a>
-                <a  class="edit" data-toggle="modal"data-target="#editEmployeeModal" title="Edit Client"><i data-feather="edit"> </i></a>
-                <a  class="delete" data-toggle="modal" data-target="#editEmployeeModal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
+                <a  class="edit" data-toggle="modal"data-target="#editEmployeeModal" title="Edit Application"><i data-feather="edit"> </i></a>
+                <a  class="delete" data-toggle="modal" data-target="#editEmployeeModal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
               </td>
             </tr>
        
   
                
         
+          </tbody>
+        </table> -->
+
+        <table class="table table-striped table-hover" id="datatable"> 
+          <thead>
+            <tr>
+              <th>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="selectAll">
+                  <label for="selectAll"></label>
+                </span>
+              </th>
+              <th>Application ID</th>
+              <th>Reference</th>
+              <th>Country</th>
+              <th>Mark Name</th>
+              <th>International Classes</th>
+              <th>Client</th>
+              <th>Status</th>   
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                  <label for="checkbox1"></label>
+                </span>
+              </td>
+              <td>19082015</td>
+              <td>JARIR/T15/05</td>
+               <td>Uganda</td>
+              <td>Boom & CO LTD</td>
+             
+              <td>37</td>
+              <td>Boom IP</td>
+             <td>
+              
+                <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+              </td>              
+              <td>
+          
+                <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+             <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
+             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
+           </td>
+           
+            </tr>
+            <tr>
+              <td>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                  <label for="checkbox1"></label>
+                </span>
+              </td>
+              <td>19082015</td>
+              <td>JARIR/T15/01</td>
+               <td>Rwanda</td>
+              <td>BWT & Others</td>
+             
+              <td>37</td>
+              <td>BWT Company</td>
+             <td>
+              
+                <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+              </td>
+              <td>
+  
+                <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
+                <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+             <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
+             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
+           </td>
+           
+            </tr>
+            
+            
+              
           </tbody>
         </table>
         
@@ -254,9 +335,9 @@
                   <div class="form-group">
                     <label for="company-column">Client</label>
                  <select class="form-control" id="clientType">
-                <option>Choose Client Type</option>
+                <option>Choose Client</option>
                 <option>Individual</option>
-                <option>Company</option>
+                <option>Entity</option>
               </select>
                   </div>
                 </div>
@@ -274,14 +355,50 @@
                   </div>
                 </div>
                 
-                <div class="col-md-6 col-12" id="companies" style="display: none;">
+                <div class="col-md-6 col-12" id="entities" style="display: none;">
                   <div class="form-group">
-                    <label for="company-column">Companies</label>
+                    <label for="company-column">Entity</label>
+                 <select class="form-control" id="EntitySelect">
+                <option>Choose Entity</option>
+                <option>Company</option>
+                <option>Goverment</option>
+                <option>NGOs</option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="Companies" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">Company</label>
                  <select class="form-control" id="basicSelect">
-                <option>Choose Company</option>
-                <option>Mo Company</option>
-                <option>Mrema Co Limited</option>
-                <option>Mokha Agents Limited</option>
+                <option>Choose company </option>
+                <option> Rj Company</option>
+                <option>Mokha Company Limited</option>
+                <option>IP Company</option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="Goverment" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">Goverment</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose Goverment </option>
+                <option> TRA</option>
+                <option>UDSM</option>
+                <option>Healthy Center</option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="NGOs" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">NGOs</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose NGOs </option>
+                <option> Tanzania children Funds </option>
+                <option>CCBRT</option>
+                <option>Tanzania healthy Promotion Support </option>
               </select>
                   </div>
                 </div>
@@ -521,14 +638,46 @@
 
           if (valueSelected == "Individual") {
             $("#individuals").show();
-            $("#companies").hide();
+            $("#entities").hide();
+            $("#Goverment").hide();
+          $("#Companies").hide();
+          $("#NGOs").hide();
 
-          } else if (valueSelected == "Company"){
-            $("#companies").show();
+          } else if (valueSelected == "Entity"){
+            $("#entities").show();
             $("#individuals").hide();
+            $("#Goverment").hide();
+          $("#Companies").hide();
+          $("#NGOs").hide();
           }
 
       });
+
+      $('#EntitySelect').on('change', function (e) {
+        
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+
+        if (valueSelected == "Company") {
+          $("#Companies").show();
+          $("#Goverment").hide();
+          $("#NGOs").hide();
+
+        } else if (valueSelected == "Goverment"){
+          $("#Goverment").show();
+          $("#Companies").hide();
+          $("#NGOs").hide();
+        }
+        else if (valueSelected == "NGOs"){
+          $("#NGOs").show();
+          $("#Companies").hide();
+          $("#Goverment").hide();
+        }
+         
+
+    });
+
+      
     </script>
   </body>
   <!-- END: Body-->

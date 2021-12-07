@@ -107,7 +107,7 @@
           <ul class="menu-content">
                 
             <li class="   active nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
-            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Company</span></a></li>
+            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a></li>
            </ul>
         </li>
           <li class="   nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="Application">Manage Application</span></a>
@@ -196,7 +196,6 @@
                <th>Gender</th>
                <th>Place of Birth</th>
                <th>Nationality</th>
-               <th>Marital Status</th>
                <th>Contacts</th>
                <th>Status</th>
               <th>Actions</th>
@@ -216,11 +215,10 @@
                 <td>Male</td>
                  <td>Kilimanjaro</td>
                  <td>Tanzanian</td>
-                 <td>Devoced</td>
                  <td>0778-965434</td>
                  <td>Pending</td>
               <td>
-                   <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
+                  
                    <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
                 <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
@@ -254,6 +252,18 @@
               <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="form-group">
+                    <label for="full-name-column">Individual ID</label>
+                    <input
+                      type="Number"
+                      id="Individual ID-column"
+                      class="form-control"
+                      placeholder="Individual ID"
+                      name="Individual ID"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="form-group">
                     <label for="full-name-column">Full Name</label>
                     <input
                       type="text"
@@ -264,18 +274,7 @@
                     />
                   </div>
                 </div>
-                <!-- <div class="col-md-6 col-12">
-                  <div class="form-group">
-                    <label for="last-name-column">Last Name</label>
-                    <input
-                      type="text"
-                      id="last-name-column"
-                      class="form-control"
-                      placeholder="Last Name"
-                      name="lname-column"
-                    />
-                  </div>
-                </div> -->
+                
                 <div class="col-md-6 col-12">
                    <div class="form-group">
                     <label for="email-id-column">Date Of Birth</label>
@@ -323,26 +322,16 @@
                     />
                   </div>
               </div>
-                  <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="company-column">Marital Status</label>
-                     <select class="form-control" id="basicSelect">
-                    <option>Choose Marital Status</option>
-                    <option>Married </option>
-                    <option>Divoced</option>
-                    <option>Single</option>
-                  </select>
-                      </div>
-                    </div>
+                  
                     <div class="col-md-6 col-12">
                       <div class="form-group">
                         <label for="email-id-column">Contacts</label>
                         <input
-                          type="contacts"
+                          type="number"
                           id="email-id-column"
                           class="form-control"
                           name="email-id-column"
-                          placeholder="Nationality"
+                          placeholder="contacts"
                         />
                       </div>
                   </div>
@@ -374,7 +363,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Edit Individual</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit client</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -433,13 +422,12 @@
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <label for="email-id-column">Assigned To</label>
-                <input
-                  type="email"
-                  id="email-id-column"
-                  class="form-control"
-                  name="email-id-column"
-                  placeholder="Assigned to"
-                />
+                <select class="form-control" id="basicSelect">
+                  <option>Choose Advocate</option>
+                  <option>Agostiano Mrema</option>
+                  <option>Mshana</option>
+                </select>
+                
               </div>
             </div>
            
