@@ -11,10 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
 
-    <title>Akiplaw - Case Management System</title>
+    <title>Akiplaw - Firm Management System</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.html">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.akiplaw.co.tz/assets/img/favicon1.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+
+
+    
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
@@ -65,7 +69,7 @@
           <ul class="nav navbar-nav d-xl-none">
             <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
           </ul>
-          <h2 style="margin-top: 10px!important;color:white" ; >AKIPLAW - CASE MANAGEMENT SYSTEM</h2>
+          <h2 style="margin-top: 10px!important;color:white" ; >AKIPLAW -  FIRM MANAGEMENT SYSTEM</h2>
         </div>
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"style="color:white" data-feather="moon"></i></a></li>
@@ -189,6 +193,7 @@
               <th>Mark Name</th>
               <th>International Classes</th>
               <th>Client</th>
+          
               <th>Status</th>   
               <th>Action</th>
           </tr>
@@ -208,15 +213,17 @@
            
             <td>37</td>
             <td>Boom IP</td>
+          
            <td>
             
               <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
             </td>              
             <td>
-              <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
-            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a>
-              <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
-              <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather='paperclip'></i></a>
+              <a href="/html/senior.advocate/seniorview.html"  class="View" style="color: blue;"  title="View Application"><i data-feather='eye'></i></a>
+              <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
+            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
+              <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Reassign Advocate"><i data-feather='send' ></i></a>
+            
            <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather='trash-2' ></i></a>
          </td>
@@ -236,16 +243,18 @@
            
             <td>37</td>
             <td>BWT Company</td>
+          
            <td>
             
               <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
             </td>
           </td>              
           <td>
-            <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
-            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a>
-            <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
-            <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather='paperclip'></i></a>
+            <a href="/html/senior.advocate/seniorview.html"  class="View" style="color: blue;"   title="View Application"><i data-feather='eye'></i></a>
+            <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
+            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
+            <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Reassign Advocate"><i data-feather='send' ></i></a>
+           
          <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather='edit'> </i></a>
          <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather='trash-2' ></i></a>
        </td>
@@ -261,19 +270,100 @@
   </div>        
 </div>
 
-
-
+  <!-- view Modal HTML -->
+  <div id="viewEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header bg-primary" >            
+            <h4 class="modal-title" style="color:white !important;">view Application</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+        <section id="multiple-column-form">
+    <div class="row">
+      <div class="col-12">
+        <form class="form">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="full-name-column">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name-column"
+                  class="form-control"
+                  placeholder="Full Name"
+                  name="fname-column"
+                />
+              </div>
+            </div>
             
+            <div class="col-md-6 col-12">
+               <div class="form-group">
+                <label for="email-id-column">Email</label>
+                <input
+                  type="email"
+                  id="email-id-column"
+                  class="form-control"
+                  name="email-id-column"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="country-floating">Phone Number</label>
+                <input
+                  type="text"
+                  id="country-floating"
+                  class="form-control"
+                  name="country-floating"
+                  placeholder="Phone#"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="company-column">Service</label>
+             <select class="form-control" id="basicSelect">
+            <option>Choose Service</option>
+            <option>Trade Mark</option>
+            <option>Cases</option>
+          </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="email-id-column">Assigned To</label>
+                <input
+                  type="email"
+                  id="email-id-column"
+                  class="form-control"
+                  name="email-id-column"
+                  placeholder="Assigned to"
+                />
+              </div>
+            </div>
+           
+          </div>
+        </form>  
+            
+          
+        
+      </div>
+    </div>
+  </section>   
+  </div>     
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-info" value="Save">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-
- 
-<!--/ Basic table -->
-
-
-
-
-
+  
 
         </div>
       </div>
@@ -336,6 +426,11 @@
      <!-- BEGIN: Page JS-->
      <script src="../../app-assets/js/scripts/components/components-modals.min.js"></script>
      <!-- END: Page JS-->
+
+     <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/forms/form-wizard.min.js"></script>
+    <!-- END: Page JS-->
+
 
     <script>
       $(window).on('load',  function(){
