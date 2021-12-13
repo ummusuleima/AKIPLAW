@@ -150,9 +150,9 @@
               
                 <div class="breadcrumb-wrapper">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                    <li class="breadcrumb-item"><a href="adv.index.html">dashboard</a>
                     </li>
-                    <li class="breadcrumb-item"><a href="advocate.html">Advocate</a>
+                    <li class="breadcrumb-item"><a href="advocate.html">Manage Application</a>
                     </li>
                     <li class="breadcrumb-item active">View Applications
                     </li>
@@ -225,8 +225,7 @@
             </td>              
             <td>
         
-              <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
-              <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+              <a href=" /html/advocate/advocateview.html"  class="view" style="color: blue;"  title="view application"><i data-feather="eye"></i></a>
            <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
          </td>
@@ -251,9 +250,7 @@
               <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
             </td>
             <td>
-
-              <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
-              <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+              <a href=" /html/advocate/advocateview.html"  class="view" style="color: blue;"  title="view application"><i data-feather="eye"></i></a>
            <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
          </td>
@@ -273,6 +270,59 @@
       </div>
     </div>
     <!-- END: Content-->
+
+        <!-- Modal HTML -->
+  <div id="editEmployeeModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header bg-primary" >            
+            <h4 class="modal-title" style="color:white !important;">Reasssign Advocate</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+        <section id="multiple-column-form">
+    <div class="row">
+      <div class="col-12">
+        <form class="form">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              
+            </div>
+            
+            
+            
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="company-column">Service</label>
+             <select class="form-control" id="basicSelect">
+            <option>Choose Service</option>
+            <option>Trade Mark</option>
+            <option>Cases</option>
+          </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="email-id-column">Assigned To</label>
+                <select class="form-control" id="basicSelect">
+                  <option>Choose Advocate</option>
+                  <option>Augostino  Mrema</option>
+                  <option>Emanuel Shirima</option>
+                </select>
+              </div>
+            </div>
+           
+          </div>
+        </form>  
+            
+          
+        
+      </div>
+    </div>
+  </section>   
+  </div> 
 
 
    
