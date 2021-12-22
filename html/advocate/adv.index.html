@@ -143,6 +143,9 @@
               <li class=" nav-item"><a class="d-flex align-items-center" href="advocate.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Application">Applications</span></a>
                 
             </li>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
+            
+            </li>
                 
               <li class=" nav-item"><a class="d-flex align-items-center" href="billings.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Billing">Billings</span></a>
                 
@@ -204,7 +207,7 @@
     <!--/ Medal Card -->
 
     <!-- Statistics Card -->
-    <div class="col-xl-6 col-md-6 col-12">
+    <div class="col-xl-6 col-sm-6 col-12">
       <div class="card card-statistics">
         <div class="card-header">
           <h4 class="card-title">Statistics</h4>
@@ -272,29 +275,58 @@
     </div>
     <!--/ Statistics Card -->
 
-    <!-- Goal Overview Card -->
-    <div class="col-lg-6 col-md-6 col-12">
-        <div class="card">
-          <div class="card-header d-flex justify-content-between align-items-center">
-            <h4 class="card-title">Cases Overview</h4>
-            <i data-feather="help-circle" class="font-medium-3 text-muted cursor-pointer"></i>
-          </div>
-          <div class="card-body p-0">
-            <div id="goal-overview-radial-bar-chart" class="my-2"></div>
-            <div class="row border-top text-center mx-0">
-              <div class="col-6 border-right py-1">
-                <p class="card-text text-muted mb-0">Completed</p>
-                <h3 class="font-weight-bolder mb-0">48</h3>
-              </div>
-              <div class="col-6 py-1">
-                <p class="card-text text-muted mb-0">In Progress</p>
-                <h3 class="font-weight-bolder mb-0">13</h3>
+            <!-- Customers Chart Card -->
+            <div class="col-md-6 col-12">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-end">
+                  <h4 class="card-title">Customers</h4>
+                  <div class="dropdown chart-dropdown">
+                    <button
+                      class="btn btn-sm border-0 dropdown-toggle px-50"
+                      type="button"
+                      id="dropdownItem3"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Last 7 Days
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownItem3">
+                      <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div id="customer-chart" class="mt-2 mb-1"></div>
+                  <div class="pt-25">
+                    <div class="d-flex justify-content-between mb-1">
+                      <div class="d-flex align-items-center">
+                        <i data-feather="circle" class="font-medium-1 text-primary"></i>
+                        <span class="font-weight-bold ml-75">New</span>
+                      </div>
+                      <span>690</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-1">
+                      <div class="d-flex align-items-center">
+                        <i data-feather="circle" class="font-medium-1 text-warning"></i>
+                        <span class="font-weight-bold ml-75">Returning</span>
+                      </div>
+                      <span>258</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <i data-feather="circle" class="font-medium-1 text-danger"></i>
+                        <span class="font-weight-bold ml-75">Referrals</span>
+                      </div>
+                      <span>149</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!--/ Goal Overview Card -->
+            <!--/ Customers Chart Card -->
   </div>
 
   
@@ -385,8 +417,11 @@
      <!---END: Page Vendor JS-->
 
      <!-- BEGIN: Page JS-->
-     <script src="../../app-assets/js/scripts/pages/dashboard-ecommerce.min.js"></script>
+     <!-- <script src="../../app-assets/js/scripts/pages/dashboard-ecommerce.min.js"></script> -->
      <!-- END: Page JS-->
+     <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/cards/card-analytics.min.js"></script>
+    <!-- END: Page JS-->
 
     <script>
       $(window).on('load',  function(){

@@ -192,10 +192,8 @@
               </th>
               <th>Individual ID</th>
               <th>Full Name</th>
-               <th>Date of Birth</th>
                <th>Gender</th>
-               <th>Place of Birth</th>
-               <th>Nationality</th>
+               <th>Country</th>
                <th>Contacts</th>
                <th>Status</th>
               <th>Actions</th>
@@ -211,15 +209,13 @@
               </td>
               <td>001</td>
               <td>Sabi IP</td>
-               <td>12 dec/1990</td>
                 <td>Male</td>
-                 <td>Kilimanjaro</td>
-                 <td>Tanzanian</td>
+                 <td>Tanzania</td>
                  <td>0778-965434</td>
                  <td>Pending</td>
               <td>
                   
-                   <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                   <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
                 <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
               </td>
@@ -312,7 +308,7 @@
                 
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="email-id-column">Nationality</label>
+                    <label for="email-id-column">Country</label>
                     <input
                       type="text"
                       id="email-id-column"
@@ -322,7 +318,21 @@
                     />
                   </div>
               </div>
+
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Date Of Birth</label>
+                  <input
+                    type="text"
+                    id="email-id-column"
+                    class="form-control"
+                    name="email-id-column"
+                    placeholder="Nationality"
+                  />
+                </div>
+            </div>
                   
+              
                     <div class="col-md-6 col-12">
                       <div class="form-group">
                         <label for="email-id-column">Contacts</label>
@@ -347,7 +357,7 @@
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-success" value="Add Individual">
+            <input type="submit" class="btn btn-success" value="Add">
           </div>
         </form>
       </div>
@@ -355,15 +365,60 @@
   </div>
   
               
+   <!-- attachment Modal HTML -->
   
-  
+   <div id="addAttachmentModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header bg-primary">            
+            <h4 class="modal-title" style="color : white !important;">Add attachment</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">          
+<section id="input-file-browser">
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      
+      <div class="card-body">
+        <div class="row">
+          
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <label for="customFile">With Browse button</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>  
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+            <input type="submit" class="btn btn-danger" value="Cancel">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ <!-- end attachment Modal HTML -->
+
+
+
   <!-- Edit Modal HTML -->
   <div id="editEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Edit client</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit Individual</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -399,7 +454,20 @@
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="country-floating">Phone Number</label>
+                <label for="country-floating">Country</label>
+                <input
+                  type="text"
+                  id="country-floating"
+                  class="form-control"
+                  name="country-floating"
+                  placeholder="Phone#"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="country-floating">contact</label>
                 <input
                   type="text"
                   id="country-floating"
@@ -448,6 +516,8 @@
       </div>
     </div>
   </div>
+
+
   <!-- Delete Modal HTML -->
   <div id="deleteEmployeeModal" class="modal fade">
     <div class="modal-dialog">
@@ -471,11 +541,6 @@
   </div>
    
   <!--/ Basic table -->
-  
-  
-  
-  
-  
   
           </div>
         </div>

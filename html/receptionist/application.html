@@ -244,9 +244,10 @@
               <th>Application ID</th>
               <th>Reference</th>
               <th>Country</th>
-              <th>Mark Name</th>
+              <th>Service Name</th>
               <th>International Classes</th>
-              <th>Client</th>
+              <th>Client Name</th>
+              <th>Assigned to</th>
               <th>Status</th>   
               <th>Actions</th>
             </tr>
@@ -266,14 +267,15 @@
              
               <td>37</td>
               <td>Boom IP</td>
+              <td>agustino Mrema</td>
              <td>
               
-                <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+                <a href="#" class="status bg-light-info" data-toggle="modal">New</a>
               </td>              
               <td>
           
-                <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
-                <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+                <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                <!-- <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a> -->
              <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
            </td>
@@ -293,14 +295,15 @@
              
               <td>37</td>
               <td>BWT Company</td>
+              <td>Shimari Kimaro</td>
              <td>
               
-                <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+                <a href="#" class="Status bg-light-success" data-toggle="modal">progress</a>
               </td>
               <td>
   
-                <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
-                <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+                <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
+                <!-- <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a> -->
              <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather="edit"> </i></a>
              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
            </td>
@@ -345,16 +348,64 @@
                 <div class="col-md-6 col-12" id="individuals" style="display: none;">
                   <div class="form-group">
                     <label for="company-column">Individuals</label>
-                 <select class="form-control" id="basicSelect">
+                 <select class="form-control" id="IndividualSelect">
                 <option>Choose Individual</option>
-                <option>Sabi IP</option>
-                <option>Mohhamed Baraka</option>
-                <option>Emmanuel Mrema</option>
-                <option>Justine Mosha</option>
+                <option>Probono client</option>
+                <option>Non probono client</option>
+                <option>Political client</option>
+                <option>Propry client</option>
               </select>
                   </div>
                 </div>
-                
+
+                <div class="col-md-6 col-12" id="probonoClient" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">Probono client</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose Probono client </option>
+                <option> Rj Probono</option>
+                <option>Mokha probono</option>
+                <option>IP probono </option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="nonprobonoClient" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">non probono client</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose non probono  </option>
+                <option> Rj non probono</option>
+                <option>Mokha non probono</option>
+                <option>IP non probono </option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="politicalClient" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">political client</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose political </option>
+                <option> Rj political</option>
+                <option>Mokha political</option>
+                <option> Compa political</option>
+              </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12" id="proprietaryClient" style="display: none;">
+                  <div class="form-group">
+                    <label for="company-column">Proprietary client</label>
+                 <select class="form-control" id="basicSelect">
+                <option>Choose propy </option>
+                <option> Rj propry</option>
+                <option>Mokha propry</option>
+                <option>IP propry</option>
+              </select>
+                  </div>
+                </div>
+                 
                 <div class="col-md-6 col-12" id="entities" style="display: none;">
                   <div class="form-group">
                     <label for="company-column">Entity</label>
@@ -442,7 +493,49 @@
     </div>
   </div>
   
-              
+    <!-- endAddModal -->
+  
+    <!-- addaAttachmentModal -->
+  <div id="addAttachmentModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header bg-primary">            
+            <h4 class="modal-title" style="color : white !important;">Add attachment</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">     
+<section id="input-file-browser">
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <label for="customFile">With Browse button</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>   
+      </div>
+       <div class="modal-footer">
+            <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+            <input type="submit" class="btn btn-danger" value="Cancel">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   
   
   <!-- Edit Modal HTML -->
@@ -652,6 +745,41 @@
           }
 
       });
+
+      $('#IndividualSelect').on('change', function (e) {
+        
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+
+        // alert(valueSelected);
+
+        if (valueSelected == "Probono client") {
+          $("#probonoClient").show();
+          $("#nonprobonoClient").hide();
+          $("#politicalClient").hide();
+          $("#proprietaryClient").hide();
+
+        } else if (valueSelected == "Non probono client"){
+          $("#nonprobonoClient").show();
+          $("#probonoClient").hide();
+          $("#politicalClient ").hide();
+          $("#proprietaryClient ").hide();
+        }
+        else if (valueSelected == "Political client"){
+          $("#politicalClient").show();
+          $("#probonoClient").hide(); 
+          $("#politicalClient ").hide();
+          $("#proprietaryClient").hide();
+        }
+        else if (valueSelected == "Propry client"){
+          $("#proprietaryClient").show();
+          $("#probonoClient").hide();
+          $("#nonprobonoClient").hide();
+          $("#politicalClient ").hide();
+        }
+         
+
+    });
 
       $('#EntitySelect').on('change', function (e) {
         

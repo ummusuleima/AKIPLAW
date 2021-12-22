@@ -195,8 +195,7 @@
                <th>Email Adress</th>
                <th>Telephone Number</th>
                <th>Country</th>
-               <th>Fax No</th>
-               <th>Web Page</th>s
+               <th>Web Page</th>
                <th>Status</th>
               <th>Actions</th>
             </tr>
@@ -214,12 +213,11 @@
                <td>Sabi&co @gmail.com</td>
                 <td>0765435623</td>
                  <td>Tanzania</td>
-                 <td>67433322</td>
                  <td>www.sabi.co.tz</td>
                  <td>Pending</td>
               <td>
                    
-                   <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                   <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
                 <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
               </td>
@@ -346,18 +344,7 @@
                   </select>
                       </div>
                     </div> -->
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="email-id-column">Fax No</label>
-                        <input
-                          type="contacts"
-                          id="email-id-column"
-                          class="form-control"
-                          name="email-id-column"
-                          placeholder="Fax No#"
-                        />
-                      </div>
-                  </div>
+                    
                   <div class="col-md-6 col-12">
                     <div class="form-group">
                       <label for="email-id-column">Web Page</label>
@@ -389,16 +376,58 @@
     </div>
   </div>
   
+<!-- addaAttachmentModal -->
+  <div id="addAttachmentModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header bg-primary">            
+            <h4 class="modal-title" style="color : white !important;">Add attachment</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">     
+<section id="input-file-browser">
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <label for="customFile">With Browse button</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>   
+      </div>
+       <div class="modal-footer">
+            <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+            <input type="submit" class="btn btn-danger" value="Cancel">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
               
   
   
   <!-- Edit Modal HTML -->
-  <!-- <div id="editEmployeeModal" class="modal fade">
+  <div id="editEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Edit Client</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit Entity</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -483,14 +512,16 @@
         </form>
       </div>
     </div>
-  </div> -->
+  </div>
+
+
   <!-- Delete Modal HTML -->
   <div id="deleteEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color : white !important;">Delete Company</h4>
+            <h4 class="modal-title" style="color : white !important;">Delete Entity</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -505,15 +536,7 @@
       </div>
     </div>
   </div>
-   
-  <!--/ Basic table -->
-  
-  
-  
-  
-  
-  
-          </div>
+       </div>
         </div>
       </div>
 
