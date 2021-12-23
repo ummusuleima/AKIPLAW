@@ -166,7 +166,7 @@
           <div class="row">
   
             <div class="col-sm-6">
-              <h2 style=" color : white !important;"  >Manage Entities </h2>
+              <h2 style=" color : white !important;">Manage Entities </h2>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-sm btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal">
@@ -191,6 +191,7 @@
                 </span>
               </th>
               <th>Entity ID</th>
+              <th>Entity Type</th>
               <th>Entity Name</th>
                <th>Email Adress</th>
                <th>Telephone Number</th>
@@ -209,6 +210,7 @@
                 </span>
               </td>
               <td>111</td>
+              <td>Company</td>
               <td>Sabi & co Limited</td>
                <td>Sabi&co @gmail.com</td>
                 <td>0765435623</td>
@@ -290,7 +292,7 @@
                    <div class="form-group">
                     <label for="email-id-column">Email Adress</label>
                     <input
-                      type="date"
+                      type="email"
                       id="email-id-column"
                       class="form-control"
                       name="email-id-column"
@@ -438,12 +440,24 @@
           <div class="row">
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="full-name-column">Full Name</label>
+                <label for="full-name-column">Entity Type</label>
                 <input
                   type="text"
                   id="full-name-column"
                   class="form-control"
-                  placeholder="Full Name"
+                  placeholder="entity type"
+                  name="fname-column"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label for="full-name-column">Entity Name</label>
+                <input
+                  type="text"
+                  id="full-name-column"
+                  class="form-control"
+                  placeholder="entity name"
                   name="fname-column"
                 />
               </div>
@@ -473,25 +487,29 @@
                 />
               </div>
             </div>
+            
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="company-column">Service</label>
-             <select class="form-control" id="basicSelect">
-            <option>Choose Service</option>
-            <option>Trade Mark</option>
-            <option>Cases</option>
-          </select>
+                <label for="full-name-column">country</label>
+                <input
+                  type="text"
+                  id="full-name-column"
+                  class="form-control"
+                  placeholder="country"
+                
+                />
               </div>
             </div>
+
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="email-id-column">Assigned To</label>
+                <label for="full-name-column">Webpage</label>
                 <input
-                  type="email"
-                  id="email-id-column"
+                  type="text"
+                  id="full-name-column"
                   class="form-control"
-                  name="email-id-column"
-                  placeholder="Assigned to"
+                  placeholder="webpage"
+            
                 />
               </div>
             </div>
