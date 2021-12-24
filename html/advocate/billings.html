@@ -214,6 +214,7 @@
         <th>Client Name </th>
         <th>Date</th>
         <th>Service</th>
+        <th>Payment  Type</th>
         <th>Amount</th>
         <th>Actions</th>
       </tr>
@@ -230,7 +231,7 @@
         <td>Mohammed Khalid</td>
          <td>04/10/2021</td>
          <td>TradeMark</td>
-        
+         <td>Bank</td>
         <td>100,000</td>
       
     
@@ -255,12 +256,11 @@
         <td>Sabi IP </td>
         <td>25/11/2021</td>
          <td>TradeMark</td>
-   
+         <td>Cash</td>
         <td>240,000</td>
       
     
         <td>
-          <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather="send" ></i></a>
           <a href="#editEmployeeModal" style="color: blue;" data-toggle="modal" title="View attachments"><i data-feather="paperclip"></i></a>
        <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
@@ -326,18 +326,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="country-floating">Invoice #</label>
-                  <input
-                    type="text"
-                    id="country-floating"
-                    class="form-control"
-                    name="country-floating"
-                    placeholder="Invoice #"
-                  />
-                </div>
-              </div>
+              
               <div class="col-md-6 col-12">
                 <div class="form-group">
                   <label for="company-column">Services</label>
@@ -347,6 +336,18 @@
               <option>Cases</option>
               
             </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Payment Type</label>
+                  <input
+                    type="email"
+                    id="email-id-column"
+                    class="form-control"
+                    name="email-id-column"
+                    placeholder="paymenttype"
+                  />
                 </div>
               </div>
               <div class="col-md-6 col-12">
