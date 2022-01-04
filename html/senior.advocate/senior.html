@@ -225,9 +225,9 @@
               <a href="./seniorview.html"  class="View" style="color: blue;"  title="View Application"><i data-feather='eye'></i></a>
               <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
             <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
-              <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+              <a href="#AssignAdvocateModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
             
-           <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
+           <a href="#editApplicationModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather='trash-2' ></i></a>
          </td>
          
@@ -256,9 +256,9 @@
             <a href="./seniorview.html"  class="View" style="color: blue;"   title="View Application"><i data-feather='eye'></i></a>
             <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
             <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
-            <a href="#editEmployeeModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
+            <a href="#AssignAdvocateModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
            
-         <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather='edit'> </i></a>
+         <a href="#editApplicationModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
          <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather='trash-2' ></i></a>
        </td>
          
@@ -373,63 +373,148 @@
     </div>
     <!-- END: Content-->
 
-
-     <!-- Modal HTML -->
-  <div id="editEmployeeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Asssign Advocate</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body">          
-        <section id="multiple-column-form">
-    <div class="row">
-      <div class="col-12">
-        <form class="form">
-          <div class="row">
-            <div class="col-md-6 col-12">
+ <!-- Modal assignedadvocate HTML -->
+    <div id="AssignAdvocateModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-primary" >            
+              <h4 class="modal-title" style="color:white !important;">Assign Advocate</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">          
+      <section id="multiple-column-form">
+      <div class="row">
+        <div class="col-12">
+          <form class="form">
+            <div class="row">
               
-            </div>
-            
-            
-            
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="company-column">Service</label>
-             <select class="form-control" id="basicSelect">
-            <option>Choose Service</option>
-            <option>Trade Mark</option>
-            <option>Cases</option>
-          </select>
+              
+              
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Assigned To</label>
+                  <select class="form-control" id="basicSelect">
+                    <option>Choose Advocate</option>
+                    <option>Augostino Mrema</option>
+                    <option>Paulina Shirima</option>
+                    <option>Rose Kimario</option>
+                    <option>Alex Shirima</option>
+                  </select>
+                  
+                </div>
               </div>
+             
             </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <label for="email-id-column">Assigned To</label>
-                <select class="form-control" id="basicSelect">
-                  <option>Choose Advocate</option>
-                  <option>Augostino  Mrema</option>
-                  <option>Emanuel Shirima</option>
-                </select>
-              </div>
-            </div>
-           
-          </div>
-        </form>  
+          </form>  
+              
             
           
-        
+        </div>
+      </div>
+    </section>   
+    </div>     
+            <div class="modal-footer">
+              <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+              <input type="submit" class="btn btn-info" value="Save">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </section>   
-  </div>     
-          <div class="modal-footer">
-            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-info" value="Save">
-          </div>
+     <!-- Modal HTML -->
+     <div id="editApplicationModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-primary" >            
+              <h4 class="modal-title" style="color:white !important;">Edit Application</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">          
+          <section id="multiple-column-form">
+      <div class="row">
+        <div class="col-12">
+          <form class="form">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="full-name-column">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name-column"
+                    class="form-control"
+                    placeholder="Full Name"
+                    name="fname-column"
+                  />
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-12">
+                 <div class="form-group">
+                  <label for="email-id-column">Email</label>
+                  <input
+                    type="email"
+                    id="email-id-column"
+                    class="form-control"
+                    name="email-id-column"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="country-floating">Phone Number</label>
+                  <input
+                    type="text"
+                    id="country-floating"
+                    class="form-control"
+                    name="country-floating"
+                    placeholder="Phone#"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="company-column">Service</label>
+               <select class="form-control" id="basicSelect">
+              <option>Choose Service</option>
+              <option>Trade Mark</option>
+              <option>Cases</option>
+            </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Assigned To</label>
+                  <input
+                    type="email"
+                    id="email-id-column"
+                    class="form-control"
+                    name="email-id-column"
+                    placeholder="Assigned to"
+                  />
+                </div>
+              </div>
+             
+            </div>
+          </form>  
+              
+            
+          
+        </div>
+      </div>
+    </section>   
+    </div>     
+            <div class="modal-footer">
+              <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+              <input type="submit" class="btn btn-info" value="Save">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>    
+          
         </form>
       </div>
     </div>
