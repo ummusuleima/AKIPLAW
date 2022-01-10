@@ -99,7 +99,7 @@
           <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
           </li>
          
-            <li class="nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email" >Manage Clients</span></a>
+            <li class="nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email" > Client Registration</span></a>
           
           <ul class="menu-content">
                 
@@ -108,8 +108,10 @@
             <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
            </ul>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Applications</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Instruction</span></a>
          
+          </li>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="Rejected.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="rejected"> Rejected Instruction </span></a>
           </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="services.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
           </li>
@@ -125,6 +127,9 @@
               <li class="  nav-item"><a class="d-flex align-items-center" href="report3.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">Total Billing Per Time</span></a>   </li>
 
               <li class=" active nav-item"><a class="d-flex align-items-center" href="report4.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Services offered per Time</span></a>   </li>
+
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report5.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Rejected Instruction per Time</span></a>   </li>
+             </ul>
              </ul>
           </li>
             </ul>
@@ -144,14 +149,13 @@
             <div class="content-header row">
             </div>
             <!-- Table head options start -->
-            <div class="text-right">
+            <div class="d-flex justify-content-between" style="float: right;  padding-left: 5px;">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='filter'></i>Filter</button> 
+            </div>
+            <div class="d-flex justify-content-between" style="float: right;">
              <div class="btn-group mr-2">
                 <button
-                  type="button"
-                  class="btn btn-primary me-1 w-sm-100"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false">
+                  type="button" class="btn btn-primary me-1 w-sm-100"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
                   <i data-feather='arrow-up'></i>
                   Export
                 </button>
@@ -162,7 +166,7 @@
                 </div>
               </div>
             </div>
-    <div class="row mt-2" id="table-head">
+    <div class="row mt-4" id="table-head">
       <div class="col-12">
         <div class="card">
           <div class="card-header" style="background-color: 

@@ -26,6 +26,14 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
+    <!-- BEGIN: Vendor CSS-->
+  
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/file-uploaders/dropzone.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-file-uploader.min.css">
+    <!-- END: Page CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
@@ -36,9 +44,8 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
-    <!-- END: Page CSS-->
+   
+
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
@@ -103,7 +110,7 @@
          
           </li>
           
-            <li class="  nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Client</span></a>
+            <li class="  nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email"> Client Registration</span></a>
           
           <ul class="menu-content">
                 
@@ -111,8 +118,10 @@
             <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
            </ul>
         </li>
-          <li class=" active nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Application</span></a>
+          <li class=" active nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Instruction</span></a>
          
+          </li>
+          <li class="  nav-item"><a class="d-flex align-items-center" href="Rejected.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="rejected"> Rejected Instruction </span></a>
           </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="services.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
           </li>
@@ -480,7 +489,7 @@
                   <div class="form-group">
                     <label for="email-id-column">Assigned To</label>
                     <select class="form-control" id="basicSelect">
-                      <option>Choose Advocate</option>
+                      <option>Choose senior Advocate</option>
                       <option>Augistobe Mrema</option>
                       <option>Silvesta Mshana</option>
                     </select>
@@ -517,27 +526,27 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">     
-<section id="input-file-browser">
-<div class="row">
-  <div class="col-md-12">
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="form-group">
-              <label for="customFile">With Browse button</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile" />
-                <label class="custom-file-label" for="customFile">Choose file</label>
+          <!-- <section id="input-file-browser"> -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title">Multiple Files Upload</h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      By default, dropzone is a multiple file uploader. User can either click on the dropzone area and select
+                      multiple files or just drop all selected files in the dropzone area. This example is the most basic setup
+                      for dropzone.
+                    </p>
+                    <div action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
+                      <div class="dz-message">Drop files here or click to upload.</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>   
+          <!-- </section>    -->
       </div>
        <div class="modal-footer">
             <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
@@ -730,6 +739,12 @@
     <script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
     <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/forms/form-file-uploader.min.js"></script>
+    <!-- END: Page JS-->
 
     <script>
       $(window).on('load',  function(){

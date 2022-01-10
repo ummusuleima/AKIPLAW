@@ -117,18 +117,20 @@
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="billings.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Email">Billings  </span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
+          <li class="nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
             <ul class="menu-content">
                 
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">List of all client Registered per Time</span></a></li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of all client Registered per Time</span></a></li>
               
-              <li class=" active  nav-item"><a class="d-flex align-items-center" href="report2.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">List of all Application</span></a>   </li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report2.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="report">List of all Application</span></a>   </li>
 
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report3.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Total Billing Per Time</span></a>   </li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report3.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">Total Billing Per Time</span></a>   </li>
 
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report4.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">List of Services offered per Time</span></a>   </li>
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report5.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Rejected Instruction per Time</span></a>   </li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report4.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Services offered per Time</span></a>   </li>
+
+              <li class=" active nav-item"><a class="d-flex align-items-center" href="report5.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Rejected Instruction per Time</span></a>   </li>
              </ul>
+            
              </ul>
           </li>
             </ul>
@@ -141,89 +143,108 @@
 
 
       <!-- BEGIN: Content-->
-        <div class="app-content content ">
-          <div class="content-overlay"></div>
-          <div class="header-navbar-shadow"></div>
-          <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
-            <!-- Table head options start -->
-            <div class="d-flex justify-content-between" style="float: right;  padding-left: 5px;">
+      <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+          <div class="content-header row">
+          </div>
+          <!-- Table head options start -->
+          <div class="d-flex justify-content-between" style="float: right;  padding-left: 5px;">
               <button class="btn btn-primary" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='filter'></i>Filter</button> 
             </div>
 
             <div class="d-flex justify-content-between" style="float: right;">
-             <div class="btn-group mr-2">
-                <button type="button" class="btn btn-primary me-1 w-sm-100"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
-                  <i data-feather='arrow-up'></i>
-                  Export
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="javascript:void(0);">csv</a>
-                  <a class="dropdown-item" href="javascript:void(0);">pdf</a>
-                  <a class="dropdown-item" href="javascript:void(0);">excel</a>
-                </div>
+           <div class="btn-group mr-2">
+              <button
+                type="button"
+                class="btn btn-primary me-1 w-sm-100"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                <i data-feather='arrow-up'></i>
+                Export
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="javascript:void(0);">csv</a>
+                <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+                <a class="dropdown-item" href="javascript:void(0);">excel</a>
               </div>
             </div>
-    <div class="row mt-4" id="table-head">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header" style="background-color: 
-          #162045;">
-            <h4 class="card-title" style="color: white  !important;;">List of all Application</h4>
           </div>
-          
-          <div class="table-responsive">
-            <table class="table">
-              <thead class="thead-primary">
-                <tr>
-                    <th>Application ID</th>
-                    <th>Reference</th>
-                    <th>Country</th>
-                    <th>Service Name</th>
-                    <th>International Classes</th>
-                    <th>Client Name</th>
-                    <th>Assigned to</th> 
-                </tr>
-              </thead>
-    
-              <tbody>
-                <tr>
-                    <td>19082015</td>
-                    <td>JARIR/T15/05</td>
-                     <td>Uganda</td>
-                    <td>Boom & CO LTD</td>
-                   
-                    <td>37</td>
-                    <td>Boom IP</td>
-                    <td>agustino Mrema</td>
-                </tr>
-                <tr>
-    
-                    <td>19082015</td>
-                    <td>JARIR/T15/01</td>
-                     <td>Rwanda</td>
-                    <td>BWT & Others</td>
-                   
-                    <td>37</td>
-                    <td>BWT Company</td>
-                    <td>Shimari Kimaro</td>
-                </tr>
-    
-                
-                
-                
-              </tbody>
-            </table>
-          </div>
-          
-          
+      
+  <div class="row mt-4" id="table-head">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header" style="background-color: 
+        #162045;">
+          <h4 class="card-title" style="color: white !important;;">List of Rejected Instruction per Time</h4>
         </div>
+        
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-primary">
+              <tr>
+                <th>Application ID</th>
+                <th>Reference</th>
+                <th>Country</th>
+                <th>Service Name</th>
+                <th>International Classes</th>
+                <th>Client Name</th>
+                <th>Assigned to</th>
+                <th>Status</th>   
+                <th>Reason</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>19082015</td>
+                <td>JARIR/T15/05</td>
+                 <td>Uganda</td>
+                <td>Boom & CO LTD</td>
+               
+                <td>37</td>
+                <td>Boom IP</td>
+                <td>agustino Mrema</td>
+               <td>
+                
+                  <a href="#" class="status bg-light-danger" data-toggle="modal">Rejected</a>
+                </td> 
+                <td>instruction not understood</td>  
+              </tr>
+
+              <tr>
+                <td>19082015</td>
+                <td>JARIR/T15/01</td>
+                 <td>Rwanda</td>
+                <td>BWT & Others</td>
+               
+                <td>37</td>
+                <td>BWT Company</td>
+                <td>Shimari Kimaro</td>
+               <td>
+                
+                  <a href="#" class="Status bg-light-danger" data-toggle="modal">Rejected</a>
+                </td>
+                <td>More initial details needed</td>
+              </tr>
+  
+              
+              
+              
+            </tbody>
+          </table>
+        </div>
+        
+        
       </div>
     </div>
-    
-            </div>
+  </div>
+  
           </div>
+        </div>
+
       
       <!-- END: Content-->
   
