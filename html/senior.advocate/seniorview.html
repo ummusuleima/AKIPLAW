@@ -117,11 +117,15 @@
           <li class=" nav-item"><a class="d-flex align-items-center" href="senior.index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
          
           </li>
-          <li class=" active  nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Applications</span></a>
+          <li class=" active  nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
             
           </li>
 
           <li class="nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
+            
+          </li>
+
+          <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
             
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href=" sen.billing.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Typography">Billings</span></a>
@@ -320,23 +324,7 @@
           </div>
 
       <div id="account-details-vertical-modern" class="content">
-        <div class="content-header">
-            <div class="d-flex justify-content-between" style="float: right; padding-left: 5px;">
-                <button class="btn btn-success btn-next text-white">  
-                    <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Approve</span>
-                  
-                </button>
-              </div>  
-
-
-              <div class="d-flex justify-content-between" style="float: right;">
-                <button class="btn btn-danger">
-                    <i data-feather="thumbs-down" class="align-middle ml-sm-25 ml-0"></i>
-                  <span class="align-middle d-sm-inline-block d-none">Reject</span>
-                  
-                </button>
-              </div>
+        <div class="content-header">  
           <h5 class="mb-0">Application Details</h5>
           <small class="text-muted"> Your Application Details.</small>
         </div>
@@ -428,7 +416,7 @@
         </div>
       </div>
 
-
+<!-- addremark -->
       <div id="viewRemarkModal" class="content">
         <div class="row">
             <section class="basic-textarea">
@@ -458,12 +446,29 @@
           
           
         </div>
+        <div class="d-flex justify-content-between" style="float: left;">
+          <button class="btn btn-success btn-next text-white">  
+              <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Approve</span>
+            
+          </button>
+        </div> 
+
+        <div class="d-flex justify-content-between" style="float: left; padding-left: 5px;">
+          <button class="btn btn-danger">
+              <i data-feather="thumbs-down" class="align-middle ml-sm-25 ml-0"></i>
+            <span class="align-middle d-sm-inline-block d-none">Reject</span>
+            
+          </button>
+        </div>
         <div class="d-flex justify-content-between" style="float: right;">
           
           <button class="btn btn-success" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='message-square'></i>Add Remark</button>
           
         </div>
       </div>
+
+      <!-- endAdd Remark -->
     </div>
   </div>
 </section>

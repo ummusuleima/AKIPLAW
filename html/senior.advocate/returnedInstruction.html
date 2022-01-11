@@ -16,10 +16,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://www.akiplaw.co.tz/assets/img/favicon1.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
-
-
-    
-
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/cssColor.css">
@@ -29,6 +25,14 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
+    <!-- BEGIN: Vendor CSS-->
+  
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/file-uploaders/dropzone.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-file-uploader.min.css">
+    <!-- END: Page CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
@@ -39,22 +43,13 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
 
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
-    <!-- END: Page CSS-->
+   
+
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
        <link rel="stylesheet" type="text/css" href="../../assets/css/table.css">
     <!-- END: Custom CSS-->
-    <!-- BEGIN: Vendor CSS-->
-    
-
-    
-
-
-
-
 
   </head>
   <!-- END: Head-->
@@ -97,36 +92,40 @@
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
           <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><span class="brand-logo">
-                     <img src="../../app-assets/images/logo/favicon.png">  <h2 class="brand-text">AKIPLAW </h2></a></li></a></li>
+                 <img src="../../app-assets/images/logo/favicon.png">
+              </span>
+           
+              <h2 class="brand-text">AKIPLAW </h2></a></li>
           <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
         </ul>
       </div>
       <div class="shadow-bottom"></div>
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-
+          
           <li class=" navigation-header"><span data-i18n="Charts &amp; Maps">SENIOR ADVOCATE</span><i data-feather="more-horizontal"></i>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="senior.index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
          
           </li>
-          <li class=" active  nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
             
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
+
+          <li class=" active nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
             
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
-            
+          <li class="nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
+        
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href=" sen.billing.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Typography">Billings</span></a>
+          <li class="   nav-item"><a class="d-flex align-items-center" href=" sen.billing.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Typography">Billings</span></a>
             
           </li>
             
           <li class=" nav-item"><a class="d-flex align-items-center" href="sen.report.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Typography">Reports</span></a>
             <ul class="menu-content">
-                
-              <li class="  nav-item"><a class="d-flex align-items-center" href="sen.report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="reports">Total Application per Time</span></a></li>
+            
+              <li class=" nav-item"><a class="d-flex align-items-center" href="sen.report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="reports">Total Application per Time</span></a></li>
               
               <li class="  nav-item"><a class="d-flex align-items-center" href="sen.report2.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="reports">Billing Report per Time</span></a>   </li>
 
@@ -144,156 +143,160 @@
     <!-- END: Main Menu-->
 
 
-    <div class="app-content content ">
-      <div class="content-overlay"></div>
-      <div class="header-navbar-shadow"></div>
-      <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-md-9 col-12 mb-2">
-            <div class="row breadcrumbs-top">
-              <div class="col-12">
-              
-                <div class="breadcrumb-wrapper">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="senior.index.html">Dashboard</a>
-                    </li>
-                    <li class="breadcrumb-item"><a href="senior.html">Application Management</a>
-                    </li>
-                    <li class="breadcrumb-item active"><a href="seniorview.html"> View Application</a>
-                    </li>
-                  </ol>
+    <!-- END: Content-->
+     <!-- BEGIN: Content-->
+     <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+          <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+              <div class="row breadcrumbs-top">
+                <div class="col-12">
+                
+                  <div class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item"><a href="client.html">Instruction Management</a>
+                      </li>
+                      <li class="breadcrumb-item active">View Returned Instructions
+                      </li>
+                    </ol>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        
-        </div>
-        <div class="content-body">
-          <div class="row">
-
-</div>
-
-<!-- Basic table -->
-<div class="container-xl"> 
-  <div class="table-responsive">
-    <div class="table-wrapper">
-      <div class="table-title  "style="background-color: 
-      #162045;">
-        <div class="row">
-
-          <div class="col-sm-6">
-            <h2 style=" color : white !important;"  >Manage Application </h2>
-          </div>
-          <div class="col-sm-6">
-              
-            <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
-              Export
-              </button>
-              
-                   
-          </div>
           
+          </div>
+          <div class="content-body">
+            <div class="row">
+  
+  </div>
+  
+  <!-- Basic table -->
+  <div class="container-xl"> 
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title  "style="background-color: #162045;">
+          <div class="row">
+  
+            <div class="col-sm-6">
+              <h2 style=" color : white !important;"  >Returned  Instructions </h2>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-sm btn-primary text-white" onclick="$('#create_service').show('fast');">
+                Filter
+            </button>
+              <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
+                Export
+                </button>
+                
+                     
+            </div>
+            
+          </div>
         </div>
-      </div>
-      <table class="table table-striped table-hover" id="datatable"> 
-        <thead>
-          <tr>
-            <th>
-              <span class="custom-checkbox">
-                <input type="checkbox" id="selectAll">
-                <label for="selectAll"></label>
-              </span>
-            </th>
-            <th>Application ID</th>
+        
+
+        <table class="table table-striped table-hover" id="datatable"> 
+          <thead>
+            <tr>
+              <th>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="selectAll">
+                  <label for="selectAll"></label>
+                </span>
+              </th>
+              <th>Application ID</th>
               <th>Reference</th>
               <th>Country</th>
-              <th>Mark Name</th>
+              <th>Service Name</th>
               <th>International Classes</th>
-              <th>Client</th>
-          
+              <th>Client Name</th>
+              <th>Assigned to</th>
               <th>Status</th>   
-              <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="custom-checkbox">
-                <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                <label for="checkbox1"></label>
-              </span>
-            </td>
-            <td>19082015</td>
-            <td>JARIR/T15/05</td>
-             <td>Uganda</td>
-            <td>Boom & CO LTD</td>
+              <th>Reason</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                  <label for="checkbox1"></label>
+                </span>
+              </td>
+              <td>19082015</td>
+              <td>JARIR/T15/05</td>
+               <td>Uganda</td>
+              <td>Boom & CO LTD</td>
+             
+              <td>37</td>
+              <td>Boom IP</td>
+              <td>agustino Mrema</td>
+             <td>
+              
+                <a href="#" class="status bg-light-danger" data-toggle="modal">Returned</a>
+              </td> 
+              <td>Task too complicated</td>   
+              <td>
+  
+                <a href="./returnedView.html"  class="View" style="color: green;"   title="View Returned Instruction"><i data-feather='eye'></i></a>  
+             <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Instruction"><i data-feather="edit"> </i></a>
+             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
+           </td>          
+              
            
-            <td>37</td>
-            <td>Boom IP</td>
-          
-           <td>
-            
-              <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
-            </td>              
-            <td>
-              <a href="./seniorview.html"  class="View" style="color: blue;"  title="View Application"><i data-feather='eye'></i></a>
-              <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
-            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
-              <a href="#AssignAdvocateModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
-            
-           <a href="#editApplicationModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
-           <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather='trash-2' ></i></a>
-         </td>
-         
-          </tr>
-          <tr>
-            <td>
-              <span class="custom-checkbox">
-                <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                <label for="checkbox1"></label>
-              </span>
-            </td>
-            <td>19082015</td>
-            <td>JARIR/T15/01</td>
-             <td>Rwanda</td>
-            <td>BWT & Others</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="custom-checkbox">
+                  <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                  <label for="checkbox1"></label>
+                </span>
+              </td>
+              <td>19082015</td>
+              <td>JARIR/T15/01</td>
+               <td>Rwanda</td>
+              <td>BWT & Others</td>
+             
+              <td>37</td>
+              <td>BWT Company</td>
+              <td>Shimari Kimaro</td>
+             <td>
+              
+                <a href="#" class="Status bg-light-danger" data-toggle="modal">Returned</a>
+              </td>
+              <td>Beyond limits on dealing with</td>
+              <td>
+  
+                <a href="./returnedView.html"  class="View" style="color: green;"   title="View Rejected Instructions"><i data-feather='eye'></i></a>  
+             <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Instruction"><i data-feather="edit"> </i></a>
+             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Application"><i data-feather="trash-2" ></i></a>
+           </td>
+              
            
-            <td>37</td>
-            <td>BWT Company</td>
-          
-           <td>
+            </tr>
             
-              <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
-            </td>
-          </td>              
-          <td>
-            <a href="./seniorview.html"  class="View" style="color: blue;"   title="View Application"><i data-feather='eye'></i></a>
-            <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
-            <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
-            <a href="#AssignAdvocateModal" style="color: green;" data-toggle="modal"  title="Assign Advocate"><i data-feather='send' ></i></a>
-           
-         <a href="#editApplicationModal" class="edit" data-toggle="modal" title="Edit Application"><i data-feather='edit'> </i></a>
-         <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather='trash-2' ></i></a>
-       </td>
-         
-          </tr>
-          
-          
             
-        </tbody>
-  </table>
-      
-    </div>
-  </div>        
-</div>
-
-  <!-- view Modal HTML -->
-  <div id="viewEmployeeModal" class="modal fade">
+              
+          </tbody>
+        </table>
+        
+      </div>
+    </div>        
+  </div>
+  
+  
+     <!-- Edit Modal HTML -->
+  <div id="editEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">view Application</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit Application</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -345,7 +348,9 @@
              <select class="form-control" id="basicSelect">
             <option>Choose Service</option>
             <option>Trade Mark</option>
-            <option>Cases</option>
+            <option>Trade  secret</option>
+            <option>Copyright</option>
+            <option>Patent</option>
           </select>
               </div>
             </div>
@@ -373,7 +378,7 @@
   </div>     
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-info" value="Save">
+            <input type="submit" class="btn btn-info" value="Resend">
           </div>
         </form>
       </div>
@@ -381,158 +386,20 @@
   </div>
 
   
-
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+          </div>
         </div>
       </div>
-    </div>
-    <!-- END: Content-->
-
- <!-- Modal assignedadvocate HTML -->
-    <div id="AssignAdvocateModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form>
-            <div class="modal-header bg-primary" >            
-              <h4 class="modal-title" style="color:white !important;">Assign Advocate</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">          
-      <section id="multiple-column-form">
-      <div class="row">
-        <div class="col-12">
-          <form class="form">
-            <div class="row">
-              
-              
-              
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="email-id-column">Assigned To</label>
-                  <select class="form-control" id="basicSelect">
-                    <option>Choose Advocate</option>
-                    <option>Augostino Mrema</option>
-                    <option>Paulina Shirima</option>
-                    <option>Rose Kimario</option>
-                    <option>Alex Shirima</option>
-                  </select>
-                  
-                </div>
-              </div>
-             
-            </div>
-          </form>  
-              
-            
-          
-        </div>
-      </div>
-    </section>   
-    </div>     
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-              <input type="submit" class="btn btn-info" value="Save">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-     <!-- Modal HTML -->
-     <div id="editApplicationModal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form>
-            <div class="modal-header bg-primary" >            
-              <h4 class="modal-title" style="color:white !important;">Edit Application</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">          
-          <section id="multiple-column-form">
-      <div class="row">
-        <div class="col-12">
-          <form class="form">
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="full-name-column">Full Name</label>
-                  <input
-                    type="text"
-                    id="full-name-column"
-                    class="form-control"
-                    placeholder="Full Name"
-                    name="fname-column"
-                  />
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-12">
-                 <div class="form-group">
-                  <label for="email-id-column">Email</label>
-                  <input
-                    type="email"
-                    id="email-id-column"
-                    class="form-control"
-                    name="email-id-column"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="country-floating">Phone Number</label>
-                  <input
-                    type="text"
-                    id="country-floating"
-                    class="form-control"
-                    name="country-floating"
-                    placeholder="Phone#"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="company-column">Service</label>
-               <select class="form-control" id="basicSelect">
-              <option>Choose Service</option>
-              <option>Trade Mark</option>
-              <option>Cases</option>
-            </select>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="email-id-column">Assigned To</label>
-                  <input
-                    type="email"
-                    id="email-id-column"
-                    class="form-control"
-                    name="email-id-column"
-                    placeholder="Assigned to"
-                  />
-                </div>
-              </div>
-             
-            </div>
-          </form>  
-              
-            
-          
-        </div>
-      </div>
-    </section>   
-    </div>     
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-              <input type="submit" class="btn btn-info" value="Save">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>    
-          
-        </form>
-      </div>
-    </div>
-  </div>
+      <!-- END: Content-->
 
 
    
@@ -545,11 +412,10 @@
     <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
     <!-- END: Footer-->
 
+
     <script src="../../app-assets/vendors/js/jquery/jquery-3.2.1.slim.min.js"></script>
     <script src="../../app-assets/vendors/js/popper/popper.min.js"></script>
     <script src="../../app-assets/vendors/js/bootstrap/bootstrap.min.js"></script>
-
-
 
     <!-- BEGIN: Vendor JS-->
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
@@ -570,6 +436,7 @@
     <!-- BEGIN: Page JS-->
     <script src="../../app-assets/js/scripts/tables/table-datatables-basic.min.js"></script>
     <!-- END: Page JS-->
+    
 
  <!-- BEGIN: Page Vendor JS-->
     <script src="../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
@@ -586,15 +453,12 @@
     <script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
     <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
-     
-     <!-- BEGIN: Page JS-->
-     <script src="../../app-assets/js/scripts/components/components-modals.min.js"></script>
-     <!-- END: Page JS-->
-
-     <!-- BEGIN: Page JS-->
-    <script src="../../app-assets/js/scripts/forms/form-wizard.min.js"></script>
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/forms/form-file-uploader.min.js"></script>
     <!-- END: Page JS-->
-
 
     <script>
       $(window).on('load',  function(){
@@ -602,9 +466,91 @@
           feather.replace({ width: 14, height: 14 });
         }
       })
-    </script>
-  </body>
-  <!-- END: Body-->
 
+      $('#clientType').on('change', function (e) {
+        
+          var optionSelected = $("option:selected", this);
+          var valueSelected = this.value;
+
+          if (valueSelected == "Individual") {
+            $("#individuals").show();
+            $("#entities").hide();
+            $("#Goverment").hide();
+          $("#Companies").hide();
+          $("#NGOs").hide();
+
+          } else if (valueSelected == "Entity"){
+            $("#entities").show();
+            $("#individuals").hide();
+            $("#Goverment").hide();
+          $("#Companies").hide();
+          $("#NGOs").hide();
+          }
+
+      });
+
+      $('#IndividualSelect').on('change', function (e) {
+        
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+
+        // alert(valueSelected);
+
+        if (valueSelected == "Probono client") {
+          $("#probonoClient").show();
+          $("#nonprobonoClient").hide();
+          $("#politicalClient").hide();
+          $("#proprietaryClient").hide();
+
+        } else if (valueSelected == "Non probono client"){
+          $("#nonprobonoClient").show();
+          $("#probonoClient").hide();
+          $("#politicalClient ").hide();
+          $("#proprietaryClient ").hide();
+        }
+        else if (valueSelected == "Political client"){
+          $("#politicalClient").show();
+          $("#probonoClient").hide(); 
+          $("#politicalClient ").hide();
+          $("#proprietaryClient").hide();
+        }
+        else if (valueSelected == "Propry client"){
+          $("#proprietaryClient").show();
+          $("#probonoClient").hide();
+          $("#nonprobonoClient").hide();
+          $("#politicalClient ").hide();
+        }
+         
+
+    });
+
+      $('#EntitySelect').on('change', function (e) {
+        
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+
+        if (valueSelected == "Company") {
+          $("#Companies").show();
+          $("#Goverment").hide();
+          $("#NGOs").hide();
+
+        } else if (valueSelected == "Goverment"){
+          $("#Goverment").show();
+          $("#Companies").hide();
+          $("#NGOs").hide();
+        }
+        else if (valueSelected == "NGOs"){
+          $("#NGOs").show();
+          $("#Companies").hide();
+          $("#Goverment").hide();
+        }
+         
+
+    });
+
+      
+    </script>
+  </body>rd
+  <!-- END: Body-->
 
 </html>
