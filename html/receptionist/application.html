@@ -59,7 +59,7 @@
   <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow btb btn-dark3">
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow"style="background-color: #847248;">
       <div class="navbar-container d-flex content">
         <div class="bookmark-wrapper d-flex align-items-center">
           <ul class="nav navbar-nav d-xl-none">
@@ -517,45 +517,42 @@
     <!-- endAddModal -->
   
     <!-- addaAttachmentModal -->
-  <div id="addAttachmentModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color : white !important;">Add attachment</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body">     
-          <!-- <section id="input-file-browser"> -->
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h4 class="card-title">Multiple Files Upload</h4>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      By default, dropzone is a multiple file uploader. User can either click on the dropzone area and select
-                      multiple files or just drop all selected files in the dropzone area. This example is the most basic setup
-                      for dropzone.
-                    </p>
-                    <div action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
-                      <div class="dz-message">Drop files here or click to upload.</div>
+  
+    <div id="addAttachmentModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-primary">            
+              <h4 class="modal-title" style="color : white !important;">Add attachments</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">     
+            <!-- <section id="input-file-browser"> -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title"> Attach More than One File</h4>
+                    </div>
+                    <div class="card-body">
+                      
+                      <div action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
+                        <div class="dz-message"> Drag and Drop files here.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            <!-- </section>    -->
+        </div>
+         <div class="modal-footer">
+              <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+              <input type="submit" class="btn btn-danger" value="Cancel">
             </div>
-          <!-- </section>    -->
-      </div>
-       <div class="modal-footer">
-            <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
-            <input type="submit" class="btn btn-danger" value="Cancel">
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
   
   

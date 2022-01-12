@@ -68,7 +68,7 @@
   <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow btb btn-dark3">
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow" style="background-color: #847248;"  >
       <div class="navbar-container d-flex content">
         <div class="bookmark-wrapper d-flex align-items-center">
           <ul class="nav navbar-nav d-xl-none">
@@ -118,7 +118,7 @@
           <li class=" nav-item"><a class="d-flex align-items-center" href="senior.index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
          
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="bookmark"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
             
           </li>
 
@@ -475,6 +475,44 @@
      
       <!-- END: Content-->
 
+
+      <div id="addAttachmentModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+              <div class="modal-header bg-primary">            
+                <h4 class="modal-title" style="color : white !important;">Add attachments</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">     
+              <!-- <section id="input-file-browser"> -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title"> Attach More than One File</h4>
+                      </div>
+                      <div class="card-body">
+                        
+                        <div action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
+                          <div class="dz-message"> Drag and Drop files here.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- </section>    -->
+          </div>
+           <div class="modal-footer">
+                <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+                <input type="submit" class="btn btn-danger" value="Cancel">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
       <div id="reAssignModal" class="modal fade">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -525,6 +563,54 @@
       </div>
    
 
+      <!-- Add attachment -->
+    <div id="addRemarkModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+              <div class="modal-header bg-primary">            
+                <h4 class="modal-title" style="color : white !important;">Add a Remark</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">          
+              
+<!-- Basic Textarea start -->
+<section class="basic-textarea">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Remark Area</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="Textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Basic Textarea end -->
+  <!-- Basic File Browser end -->
+                
+              </div>
+              <div class="modal-footer">
+                <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+                <input type="submit" class="btn btn-danger" value="Cancel">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+ 
   
    <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light">

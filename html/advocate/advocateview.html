@@ -52,6 +52,14 @@
        <link rel="stylesheet" type="text/css" href="../../assets/css/table.css">
     <!-- END: Custom CSS-->
 
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/file-uploaders/dropzone.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-file-uploader.min.css">
+    <!-- END: Page CSS-->
+
   </head>
   <!-- END: Head-->
 
@@ -59,14 +67,12 @@
   <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-dark navbar-shadow btn btn-dark3">
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-dark navbar-shadow " style="background-color: #847248;">
       <div class="navbar-container d-flex content">
-
         <div class="bookmark-wrapper d-flex align-items-center">
           <ul class="nav navbar-nav d-xl-none">
             <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
           </ul>
-          <!-- <p style="float: left;"><h1 class="brand-text"  style=" color: black;">AYMC MEMBERS ACCOUNTING SYSTEM </h1></p> -->
           <h2 style="margin-top: 10px!important;color:white" ; >AKIPLAW - FIRM MANAGEMENT SYSTEM</h2>
           <ul class="nav navbar-nav">
               <div class="bookmark-input search-input">
@@ -79,19 +85,17 @@
         </div>
         
         <ul class="nav navbar-nav align-items-center ml-auto">
-       
           <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"style="color:white" data-feather="moon"></i></a></li>
-     
-         
+
           <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder " style="color:white">AKIPLAW</span><span class="user-status" style= "color:white">Admin</span></div><span class="avatar"><img class="round" src="/app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
-          
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-           
-              <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
-          </div>
-        </li>
+              <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder " style="color:white">AKIPLAW</span><span class="user-status" style= "color:white">Admin</span></div><span class="avatar"><img class="round" src="/app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
+            
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+             
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -124,7 +128,7 @@
           <li class=" nav-item"><a class="d-flex align-items-center" href="adv.index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
          
           </li>
-          <li class=" active nav-item"><a class="d-flex align-items-center" href="advocate.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Applications</span></a>
+          <li class=" active nav-item"><a class="d-flex align-items-center" href="advocate.html"><i data-feather="bookmark"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
             
         </li>
         <li class=" nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
@@ -165,9 +169,9 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="adv.index.html">Dashboard</a>
                 </li>
-                <li class="breadcrumb-item"><a href="advocate.html">Manage Application</a>
+                <li class="breadcrumb-item"><a href="advocate.html">Manage Instructions</a>
                 </li>
-                <li class="breadcrumb-item active"><a href="#"> View Application</a>
+                <li class="breadcrumb-item active"><a href="#"> View Instructions</a>
                 </li>
               </ol>
             </div>
@@ -211,7 +215,7 @@
               <i data-feather="file-text" class="font-medium-3"></i>
             </span>
             <span class="bs-stepper-label">
-              <span class="bs-stepper-title">Application Details</span>
+              <span class="bs-stepper-title">Instructions Details</span>
               <!-- <span class="bs-stepper-subtitle">Setup Account Details</span> -->
             </span>
           </button>
@@ -223,7 +227,7 @@
               <i data-feather="eye" class="font-medium-3"></i>
             </span>
             <span class="bs-stepper-label">
-              <span class="bs-stepper-title">View Attachment</span>
+              <span class="bs-stepper-title">View Attachments</span>
              
             </span>
           </button>
@@ -343,12 +347,12 @@
                     
                   </button>
                 </div> -->
-            <h5 class="mb-0">Application Details</h5>
-            <small class="text-muted"> Your Application Details.</small>
+            <h5 class="mb-0">Instruction Details</h5>
+            <small class="text-muted"> Your Instructions Details.</small>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="form-label" for="vertical-modern-username">Application ID</label>
+              <label class="form-label" for="vertical-modern-username">Instruction ID</label>
               <input type="text" id="vertical-modern-username" class="form-control" value="19082015"  readonly/>
             </div>
             <div class="form-group col-md-6">
@@ -374,9 +378,13 @@
           </div>
           
           <div class="d-flex justify-content-between">
-            <button class="btn btn-outline-secondary btn-prev" disabled>
+            <button class="btn btn-outline-secondary btn-prev">
               <i data-feather="arrow-left" class="align-middle mr-sm-25 mr-0"></i>
               <span class="align-middle d-sm-inline-block d-none">Previous</span>
+            </button>
+            <button class="btn btn-primary btn-next">
+              <span class="align-middle d-sm-inline-block d-none">Next</span>
+              <i data-feather="arrow-right" class="align-middle ml-sm-25 ml-0"></i>
             </button>
   
             
@@ -429,9 +437,11 @@
           </div>
           <div class="d-flex justify-content-between" style="float: right;">
             
-            <button class="btn btn-success" data-toggle="modal" data-target="#addAttachmentModal"> <i data-feather='paperclip'></i>Add Attachment</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#addAttachmentModal"> <i data-feather='paperclip'></i>Add Attachments</button>
             
           </div>
+
+
         </div>
   
   
@@ -455,7 +465,7 @@
                           <div class="col">  
                             <div class="col-12"> 
                               <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Remark</label>
+                                <label for="exampleFormControlTextarea1">Remarks</label>
                                 <hr>
                                 <p>It is sufficient to remark here that the presentation of the sacrifice of the mass came to be viewed as the essential priestly office, so that the Christian presbyter really was a sacerdos in the antique sense.</p>
                                 <hr>
@@ -505,51 +515,40 @@
     <!-- END: Content-->
 
     <div id="addAttachmentModal" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form>
-              <div class="modal-header bg-primary">            
-                <h4 class="modal-title" style="color : white !important;">Add attachment</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-              <div class="modal-body">          
-                <p>Do you want to Add  More Attachments?</p>
-
-                <!-- Basic File Browser start -->
-<section id="input-file-browser">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          
-          <div class="card-body">
-            <div class="row">
-              
-              <div class="col-lg-6 col-md-12">
-                <div class="form-group">
-                  <label for="customFile">With Browse button</label>
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile" />
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-primary">            
+              <h4 class="modal-title" style="color : white !important;">Add attachments</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">     
+            <!-- <section id="input-file-browser"> -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title"> Attach More than One File</h4>
+                    </div>
+                    <div class="card-body">
+                      
+                      <div action="#" class="dropzone dropzone-area" id="dpz-multiple-files">
+                        <div class="dz-message"> Drag and Drop files here.</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            <!-- </section>    -->
+        </div>
+         <div class="modal-footer">
+              <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
+              <input type="submit" class="btn btn-danger" value="Cancel">
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-  <!-- Basic File Browser end -->
-                
-              </div>
-              <div class="modal-footer">
-                <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
-                <input type="submit" class="btn btn-danger" value="Cancel">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
 
       <!-- Add attachment -->
@@ -607,7 +606,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color : white !important;">Reason to Return</h4>
+            <h4 class="modal-title" style="color : white !important;">Reason to Return Instruction</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -621,7 +620,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Reasons on returning the Application</label>
+                  <label for="exampleFormControlTextarea1">Reasons on returning the Instruction</label>
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
@@ -700,13 +699,25 @@
 <script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
 <!-- END: Page Vendor JS-->
 
+    
+
+   
+    
+     <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/forms/form-file-uploader.min.js"></script>
+    <!-- END: Page JS-->
     <!-- BEGIN: Page JS-->
     <script src="../../app-assets/js/scripts/components/components-modals.min.js"></script>
     <!-- END: Page JS-->
 
     <!-- BEGIN: Page JS-->
-     <script src="../../app-assets/js/scripts/forms/form-wizard.min.js"></script>
-    <!-- END: Page JS-->
+   <script src="../../app-assets/js/scripts/forms/form-wizard.min.js"></script>
+   <!-- END: Page JS-->
+   
+ 
 
     <script>
       $(window).on('load',  function(){

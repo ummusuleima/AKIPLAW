@@ -44,6 +44,17 @@
        <link rel="stylesheet" type="text/css" href="../../assets/css/table.css">
     <!-- END: Custom CSS-->
 
+     <!-- BEGIN: Vendor CSS-->
+     <link rel="stylesheet" type="text/css" href="/../../app-assets/vendors/css/vendors.min.css">
+     <!-- END: Vendor CSS-->
+ 
+     
+ 
+     
+ 
+     
+ 
+
   </head>
   <!-- END: Head-->
 
@@ -51,7 +62,7 @@
   <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow btb btn-dark3">
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav  navbar-dark navbar-shadow" style="background-color: #847248;">
       <div class="navbar-container d-flex content">
         <div class="bookmark-wrapper d-flex align-items-center">
           <ul class="nav navbar-nav d-xl-none">
@@ -207,9 +218,6 @@
             <th>Date</th>
             <th>Service</th>
             <th>Payment Type</th>
-            <th>Amount</th>
-            <th>Task Description</th>
-            <th>Hours</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -226,9 +234,9 @@
                <td>04/10/2021</td>
                <td>TradeMark</td>
                <td>Cash</td>
-              <td>100,000</td>
-              <td>Formulating company name</td>
-              <td>3 hrs</td>
+              
+              
+              
          
            
             <td>
@@ -247,6 +255,7 @@
     </div>
   </div>        
 </div>
+
 <!-- Add Modal HTML -->
 <div id="addEmployeeModal" class="modal fade">
   <div class="modal-dialog modal-lg">
@@ -315,12 +324,18 @@
                </div>
              </div>
               <hr>
-              <div class="col-md-12 col-12">
+
+
+              <!-- Invoice repeater -->
+             
+    <!-- /Invoice repeater -->
+
+              <!-- <div class="col-md-12 col-12">
                 <div class="form-group">
                   <label for="email-id-column">Task</label>
                 </div>
-              </div>
-              <div class="col-md-3 col-12">
+              </div> -->
+              <!-- <div class="col-md-3 col-12">
                 <div class="form-group">
                   <label for="email-id-column"> Description</label>
                   <input
@@ -331,8 +346,8 @@
                     placeholder="Description"
                   />
                 </div>
-              </div>
-              <div class="col-md-3 col-12">
+              </div> -->
+              <!-- <div class="col-md-3 col-12">
                 <div class="form-group">
                   <label for="email-id-column"> Hours</label>
                   <input
@@ -343,8 +358,8 @@
                     placeholder="Hours"
                   />
                 </div>
-              </div>
-              <div class="col-md-3 col-12">
+              </div> -->
+              <!-- <div class="col-md-3 col-12">
                 <div class="form-group">
                   <label for="email-id-column"> Amount</label>
                   <input
@@ -355,21 +370,103 @@
                     placeholder="amount"
                   />
                 </div>
-              </div>
-              <div class="col-md-3 col-12">
+              </div> -->
+              <!-- <div class="col-md-3 col-12">
                 <div class="form-group">
                   <label for="email-id-column">Save Task</label>
                   <br>
                   <input type="button" class="form-control btn btn-success" value="Save Task">
                 </div>
-              </div>
+              </div> -->
 
               
              
             </div>
           </form>
         
-      
+          <div class="content-body"><section class="form-control-repeater">
+            <div class="row">
+              <!-- Invoice repeater -->
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title">Task</h4>
+                  </div>
+                  <div class="card-body">
+                    <form action="#" class="invoice-repeater">
+                      <div data-repeater-list="invoice">
+                        <div data-repeater-item>
+                          <div class="row d-flex align-items-end">
+                            <div class="col-md-4 col-12">
+                              <div class="form-group">
+                                <label for="itemname">Task Description</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="itemname"
+                                  aria-describedby="itemname"
+                                  placeholder=" Description"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="col-md-2 col-12">
+                              <div class="form-group">
+                                <label for="itemcost">Hours</label>
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  id="itemcost"
+                                  aria-describedby="itemcost"
+                                  placeholder="Hours"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="col-md-2 col-12">
+                              <div class="form-group">
+                                <label for="itemquantity">Amount</label>
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  id="itemquantity"
+                                  aria-describedby="itemquantity"
+                                  placeholder="Amount"
+                                />
+                              </div>
+                            </div>
+          
+                            
+          
+                            <div class="col-md-2 col-12 mb-50">
+                              <div class="form-group">
+                                <button class="btn btn-outline-danger text-nowrap px-1" data-repeater-delete type="button">
+                                  <i data-feather="x" class="mr-25"></i>
+                                  <span>Delete</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                            <i data-feather="plus" class="mr-25"></i>
+                            <span>Add New</span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- /Invoice repeater -->
+            </div>
+          </section>
+          
+                  </div>
     </div>
   </div>
 </section>         
@@ -542,6 +639,14 @@
     <!-- BEGIN: Page JS-->
     <script src="../../app-assets/js/scripts/tables/table-datatables-basic.min.js"></script>
     <!-- END: Page JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+     <!-- BEGIN: Page JS-->
+     <script src="../../app-assets/js/scripts/forms/form-repeater.min.js"></script>
+     <!-- END: Page JS-->
     
 
  <!-- BEGIN: Page Vendor JS-->
