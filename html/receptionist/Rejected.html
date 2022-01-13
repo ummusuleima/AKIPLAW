@@ -120,7 +120,7 @@
           <li class="  nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Instruction</span></a>
          
           </li>
-          <li class="  active nav-item"><a class="d-flex align-items-center" href="Rejected.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="rejected"> Rejected Instruction </span></a>
+          <li class="  active nav-item"><a class="d-flex align-items-center" href="Rejected.html"><i data-feather="x"></i><span class="menu-title text-truncate" data-i18n="rejected"> Rejected Instruction </span></a>
           </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="services.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
           </li>
@@ -163,9 +163,9 @@
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html">Home</a>
                       </li>
-                      <li class="breadcrumb-item"><a href="client.html">Instruction Management</a>
+                      <li class="breadcrumb-item"><a href="Rejected.html">Instruction Management</a>
                       </li>
-                      <li class="breadcrumb-item active">View Rejected Instruction
+                      <li class="breadcrumb-item"> <a href="instructionView.html">View Rejected Instructions</a>
                       </li>
                     </ol>
                   </div>
@@ -187,7 +187,7 @@
           <div class="row">
   
             <div class="col-sm-6">
-              <h2 style=" color : white !important;"  >Rejected Instruction </h2>
+              <h2 style=" color : white !important;"  > Manage Rejected Instructions </h2>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-sm btn-primary text-white" onclick="$('#create_service').show('fast');">
@@ -213,7 +213,7 @@
                   <label for="selectAll"></label>
                 </span>
               </th>
-              <th>Application ID</th>
+              <th>Instruction  ID</th>
               <th>Reference</th>
               <th>Country</th>
               <th>Service Name</th>
@@ -301,7 +301,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Edit Application</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit Instruction</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          

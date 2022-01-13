@@ -115,7 +115,7 @@
             <li class=" nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="bookmark"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
               
             </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="arrow-down"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
           
             </li>
             <li class="nav-item"><a class="d-flex align-items-center" href="calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Typography">Calendar</span></a>
@@ -158,11 +158,11 @@
           
             <div class="breadcrumb-wrapper">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                <li class="breadcrumb-item"><a href="senior.index.html">Home</a>
                 </li>
-                <li class="breadcrumb-item"><a href="#">Bill Management</a>
+                <li class="breadcrumb-item"><a href="sen.billing.html">Bills Management</a>
                 </li>
-                <li class="breadcrumb-item active"> View Receipt
+                <li class="breadcrumb-item active"> <a href="receipt.html"> View Receipt</a>
                 </li>
               </ol>
             </div>
@@ -308,13 +308,11 @@
               <div class="col-md-6 col-12">
                 <div class="form-group">
                  <label for="email-id-column">Payment Type</label>
-                 <input
-                   type="text"
-                   id="email-id-column"
-                   class="form-control"
-                   name="email-id-column"
-                   placeholder="paymenttype"
-                 />
+                 <select class="form-control" id="basicSelect">
+                  <option>Choose Payment Type </option>
+                  <option>Bank</option>
+                  <option>Cash</option>
+                </select>
                </div>
              </div>
               <hr>

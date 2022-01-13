@@ -94,46 +94,44 @@
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
           
-          <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">RECEPTIONIST</span><i data-feather="more-horizontal"></i>
+          <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">ADMIN</span><i data-feather="more-horizontal"></i>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span></a>
-          </li>
          
-            <li class="nav-item"><a class="d-flex align-items-center" href="clients.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email" > Client Registration</span></a>
+          </li>
+          
+            <li class=" nav-item"><a class="d-flex align-items-center" href="client.registration.html"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Email">Client Registration</span></a>
           
           <ul class="menu-content">
                 
             <li class="  nav-item"><a class="d-flex align-items-center" href="individual.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">Individual</span></a></li>
-
-            <li class="  nav-item"><a class="d-flex align-items-center" href="company.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
+            <li class="  nav-item"><a class="d-flex align-items-center" href="entity.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Entities</span></a>   </li>
            </ul>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="application.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">Manage Instruction</span></a>
-         
+          <li class=" nav-item"><a class="d-flex align-items-center" href="user.management.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="application">User Management</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="Rejected.html"><i data-feather="x"></i><span class="menu-title text-truncate" data-i18n="rejected"> Rejected Instruction </span></a>
+
+            <li class=" nav-item"><a class="d-flex align-items-center" href="manageService.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
           </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="services.html"><i data-feather="plus-circle"></i><span class="menu-title text-truncate" data-i18n="Email">Manage Services </span></a>
-          </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="billings.html"><i data-feather="dollar-sign"></i><span class="menu-title text-truncate" data-i18n="Email">Billings  </span></a>
-          </li>
-          <li class="nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
+          
+          <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Email">Reports </span></a>
             <ul class="menu-content">
                 
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of all client Registered per Time</span></a></li>
+              <li class="   active nav-item"><a class="d-flex align-items-center" href="report1.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="individual">List of all client Registered per Time</span></a></li>
+
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report2.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">List of Services offered per Time</span></a></li>
               
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report2.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="report">List of all Application</span></a>   </li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report3.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">List of all user registered</span></a>   </li>
 
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report3.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">Total Billing Per Time</span></a>   </li>
+              <li class="  nav-item"><a class="d-flex align-items-center" href="report4.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Company">Total Revenue Per Time</span></a>   </li>
 
-              <li class=" active nav-item"><a class="d-flex align-items-center" href="report4.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Services offered per Time</span></a>   </li>
-
-              <li class="  nav-item"><a class="d-flex align-items-center" href="report5.html"><i data-feather="file"></i><span class="menu-title text-truncate" data-i18n="Report">List of Rejected Instruction per Time</span></a>   </li>
-             </ul>
+             
              </ul>
           </li>
             </ul>
           </li>
+         
+          
         </ul>
       </div>
     </div>
@@ -150,12 +148,12 @@
             </div>
             <!-- Table head options start -->
             <div class="d-flex justify-content-between" style="float: right;  padding-left: 5px;">
-              <button class="btn btn-primary" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='filter'></i>Filter</button> 
+              <button class="btn btn-primary" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='filter'></i>Filter</button>
+               
             </div>
             <div class="d-flex justify-content-between" style="float: right;">
              <div class="btn-group mr-2">
-                <button
-                  type="button" class="btn btn-primary me-1 w-sm-100"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+                <button type="button"class="btn btn-primary me-1 w-sm-100"data-toggle="dropdown"aria-haspopup="true"aria-expanded="false">
                   <i data-feather='arrow-up'></i>
                   Export
                 </button>
@@ -166,45 +164,57 @@
                 </div>
               </div>
             </div>
+
     <div class="row mt-4" id="table-head">
       <div class="col-12">
         <div class="card">
           <div class="card-header" style="background-color: 
           #162045;">
-            <h4 class="card-title" style="color: white !important;;">List of Services offered per Time</h4>
+            <h4 class="card-title" style="color: white !important;;">List of all client Registered per Time</h4>
           </div>
           
           <div class="table-responsive">
             <table class="table">
               <thead class="thead-primary">
                 <tr>
-                    <th>Service ID</th>
-                    <th>Category</th>
-                     <th>Service Name</th>
-                      <th>Created Date</th>
+                  <th>Client ID</th>
+                  <th>client type</th>
+                  <th>Client Name</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>contact</th> 
+                 
+
                 </tr>
               </thead>
     
               <tbody>
                 <tr>
-                    <td>01</td>
-                    <td>Intelectual Property (IP) </td>
-                     <td>TradeMark</td>
-                    <td>04/10/2021</td>
+                  <td>001</td>
+                  <td>Probono Cient</td>
+                  <td>Sabi IP</td>
+                  <td>sabiIP@gmail.com</td>
+                  <td>Tanzania</td>
+                  <td>+255-6543454</td>
                 </tr>
-
+            
+            
                 <tr>
-                    <td>01</td>
-                    <td>Intelectual Property (IP) </td>
-                     <td>Traade secret</td>
-                    <td>04/10/2021</td>
+                  <td>002</td>
+                  <td>company</td>
+                  <td>MO company</td>
+                  <td>MoLTD@gmail.com</td>
+                  <td>Kenya</td>
+                  <td>+254 7234567</td>
                 </tr>
     
                 <tr>
-                    <td>01</td>
-                    <td>Intelectual Property (IP) </td>
-                     <td>Copyright</td>
-                    <td>04/10/2021</td>
+                  <td>013</td>
+                  <td>Association</td>
+                  <td>Wakili group</td>
+                  <td>wakili@gmail.com</td>
+                  <td>Tanzani</td>
+                  <td>+255-4565768</td>
                 </tr>
                 
                 

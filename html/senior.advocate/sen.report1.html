@@ -104,7 +104,7 @@
               <li class=" nav-item"><a class="d-flex align-items-center" href="senior.html"><i data-feather="bookmark"></i><span class="menu-title text-truncate" data-i18n="Typography">Instructions</span></a>
                 
               </li>
-              <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
+              <li class=" nav-item"><a class="d-flex align-items-center" href="returnedInstruction.html"><i data-feather="arrow-down"></i><span class="menu-title text-truncate" data-i18n="Typography">Returned Instruction</span></a>
             
               </li>
 
@@ -143,25 +143,25 @@
         <div class="content-header row">
         </div>
         <!-- Table head options start -->
-        <div class="text-right">
-         <div class="btn-group mr-2">
-            <button
-              type="button"
-              class="btn btn-primary me-1 w-sm-100"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false">
-              <i data-feather='arrow-up'></i>
-              Export
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void(0);">csv</a>
-              <a class="dropdown-item" href="javascript:void(0);">pdf</a>
-              <a class="dropdown-item" href="javascript:void(0);">excel</a>
-            </div>
+        <div class="d-flex justify-content-between" style="float: right;  padding-left: 5px;">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#addRemarkModal"> <i data-feather='filter'></i>Filter</button> 
+        </div>
+          <div class="d-flex justify-content-between" style="float: right;">
+            <div class="btn-group mr-2">
+               <button
+                 type="button"class="btn btn-primary me-1 w-sm-100"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <i data-feather='arrow-up'></i>
+                 Export
+               </button>
+               <div class="dropdown-menu dropdown-menu-right">
+                 <a class="dropdown-item" href="javascript:void(0);">csv</a>
+                 <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+                 <a class="dropdown-item" href="javascript:void(0);">excel</a>
+               </div>
+             </div>
           </div>
         </div>
-        <div class="row mt-2" id="table-head">
+        <div class="row mt-4" id="table-head">
             <div class="col-12">
               <div class="card">
                 <div class="card-header" style="background-color: 

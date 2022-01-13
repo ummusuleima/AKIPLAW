@@ -162,11 +162,11 @@
           
             <div class="breadcrumb-wrapper">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                <li class="breadcrumb-item"><a href="adv.index.html">Home</a>
                 </li>
-                <li class="breadcrumb-item"><a href="#">Bill Management</a>
+                <li class="breadcrumb-item"><a href="billings.html">Bill Management</a>
                 </li>
-                <li class="breadcrumb-item active"> View Receipt
+                <li class="breadcrumb-item active"><a href="receipts.html"> View Receipt</a>
                 </li>
               </ol>
             </div>
@@ -538,13 +538,11 @@
               <div class="col-md-6 col-12">
                 <div class="form-group">
                   <label for="country-floating">Payment Type</label>
-                  <input
-                    type="text"
-                    id="country-floating"
-                    class="form-control"
-                    name="country-floating"
-                    placeholder="paymenttype"
-                  />
+                  <select class="form-control" id="basicSelect">
+                    <option>Choose Payment Type </option>
+                    <option>Bank</option>
+                    <option>Cash</option>
+                  </select>
                 </div>
               </div>
               <div class="col-md-6 col-12">
