@@ -162,9 +162,9 @@
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html">Home</a>
                       </li>
-                      <li class="breadcrumb-item"><a href="individual.html">  Individual Registration</a>
+                      <li class="breadcrumb-item"><a href="user.management.html">  User Registration</a>
                       </li>
-                      <li class="breadcrumb-item active">View Individual
+                      <li class="breadcrumb-item active">View User
                       </li>
                     </ol>
                   </div>
@@ -186,11 +186,11 @@
           <div class="row">
   
             <div class="col-sm-6">
-              <h2 style=" color : white !important;"  >Manage Individual </h2>
+              <h2 style=" color : white !important;"  >Manage User </h2>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-sm btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal">
-                Add Client
+                Add User
                 </button>  
               <button type="button" class="btn btn-sm btn-primary text-white " onclick="$('#create_service').show('fast');">
                 Export
@@ -210,15 +210,17 @@
                   <label for="selectAll"></label>
                 </span>
               </th>
-              <th>Individual ID</th>
-              <th>Individual Type</th>
-              <th>Full Name</th>
+              <th>User ID</th>
+              <th>First Name</th>
+              <th>Second Name</th>
+              <th>Last Name</th>
               <th>Email</th>
                <th>Gender</th>
                <th>Address</th>
                <th>Country</th>
                <th>Phone Number</th>
-               <th>Status</th>
+               <th>Role</th>
+              
               <th>Actions</th>
             </tr>
           </thead>
@@ -231,17 +233,19 @@
                 </span>
               </td>
               <td>001</td>
-              <td>Probono client</td>
-              <td>Sabi IP</td>
+              <td>Augostino</td>
+              <td>Pascal</td>
+              <td>Mrema</td>
               <td>Sabi@gmail.com</td>
                 <td>Male</td>
                 <td>Dar-es salaam</td>
                  <td>Tanzania</td>
                  <td>0778-965434</td>
-                 <td>Pending</td>
+                 <td>Senior Advocate</td>
+                
               <td>
                   
-                   <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add attachments"><i data-feather="paperclip"></i></a>
+                   
                 <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><i data-feather="edit"> </i></a>
                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><i data-feather="trash-2" ></i></a>
               </td>
@@ -262,7 +266,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color:#fff !important;">Add Individual</h4>
+            <h4 class="modal-title" style="color:#fff !important;">Add User</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -274,7 +278,7 @@
               <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="full-name-column">Individual ID</label>
+                    <label for="full-name-column">User ID</label>
                     <input
                       type="Number"
                       id="Individual ID-column"
@@ -285,22 +289,11 @@
                   </div>
                 </div>
 
-                <div class="col-md-6 col-12">
-                  <div class="form-group">
-                    <label for="full-name-column">Individual Type</label>
-                    <select class="form-control" id="basicSelect">
-                      <option>Choose Type</option>
-                      <option>Probono client</option>
-                      <option>Non Probono client</option>
-                      <option>Political client</option>
-                      <option>Proprientary client</option>
-                    </select>
-                  </div>
-                </div>
+                
 
                 <div class="col-md-6 col-12">
                   <div class="form-group">
-                    <label for="full-name-column">Full Name</label>
+                    <label for="full-name-column">First Name</label>
                     <input
                       type="text"
                       id="full-name-column"
@@ -310,6 +303,30 @@
                     />
                   </div>
                 </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-group">
+                      <label for="full-name-column">Middle Name</label>
+                      <input
+                        type="text"
+                        id="full-name-column"
+                        class="form-control"
+                        placeholder="Full Name"
+                        name="fname-column"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="form-group">
+                      <label for="full-name-column">Last Name</label>
+                      <input
+                        type="text"
+                        id="full-name-column"
+                        class="form-control"
+                        placeholder="Full Name"
+                        name="fname-column"
+                      />
+                    </div>
+                  </div>
                 
                 <div class="col-md-6 col-12">
                    <div class="form-group">
@@ -358,17 +375,29 @@
                     />
                   </div>
               </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Phone Number</label>
+                  <input
+                    type="text"
+                    id="email-id-column"
+                    class="form-control"
+                    name="email-id-column"
+                    placeholder="Phone Number"
+                  />
+                </div>
+            </div>
 
                     <div class="col-md-6 col-12">
                       <div class="form-group">
-                        <label for="email-id-column">Phone number</label>
-                        <input
-                          type="number"
-                          id="email-id-column"
-                          class="form-control"
-                          name="email-id-column"
-                          placeholder="phonenumber"
-                        />
+                        <label for="email-id-column">Role</label>
+                        <select class="form-control" id="basicSelect">
+                            <option>Choose Role</option>
+                            <option>Receptionist</option>
+                            <option>Advocate</option>
+                            <option>Senior advocate</option>
+                           
+                          </select>
                       </div>
                   </div>
                 
@@ -438,7 +467,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary" >            
-            <h4 class="modal-title" style="color:white !important;">Edit Individual</h4>
+            <h4 class="modal-title" style="color:white !important;">Edit User</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
@@ -449,7 +478,7 @@
           <div class="row">
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <label for="full-name-column">Full Name</label>
+                <label for="full-name-column">First Name</label>
                 <input
                   type="text"
                   id="full-name-column"
@@ -459,6 +488,30 @@
                 />
               </div>
             </div>
+            <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="full-name-column">Middle Name</label>
+                  <input
+                    type="text"
+                    id="full-name-column"
+                    class="form-control"
+                    placeholder="Full Name"
+                    name="mname-column"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="full-name-column">Last Name</label>
+                  <input
+                    type="text"
+                    id="full-name-column"
+                    class="form-control"
+                    placeholder="Full Name"
+                    name="lname-column"
+                  />
+                </div>
+              </div>
             
             <div class="col-md-6 col-12">
                <div class="form-group">
@@ -521,6 +574,22 @@
                 />
               </div>
             </div>
+
+            <div class="col-md-6 col-12">
+                <div class="form-group">
+                  <label for="email-id-column">Role</label>
+                  <select class="form-control" id="basicSelect">
+                      <option>Choose Role</option>
+                      <option>Receptionist</option>
+                      <option>Advocate</option>
+                      <option>Senior advocate</option>
+                     
+                    </select>
+                </div>
+            </div>
+
+
+        
             <!-- <div class="col-md-6 col-12">
               <div class="form-group">
                 <label for="company-column">Service</label>
@@ -568,7 +637,7 @@
       <div class="modal-content">
         <form>
           <div class="modal-header bg-primary">            
-            <h4 class="modal-title" style="color : white !important;">Delete Individual</h4>
+            <h4 class="modal-title" style="color : white !important;">Delete User</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">          
