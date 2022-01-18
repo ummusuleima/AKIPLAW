@@ -187,7 +187,9 @@
                         <div class="mt-md-0 mt-2">
                           <h4 class="invoice-title">
                             Invoice
-                            <span class="invoice-number">#3492</span>
+
+                            <input type="text" class="form-control invoice-edit-input" placeholder="53634" />
+                          
                           </h4>
                           <div class="invoice-date-wrapper">
                             <p class="invoice-date-title">Date Issued:</p>
@@ -243,61 +245,116 @@
                     <!-- Address and Contact ends -->
             
                     <!-- Invoice Description starts -->
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="py-1">Task description</th>
-                            <th class="py-1">Rate</th>
-                            <th class="py-1">Hours</th>
-                            <th class="py-1">Total</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                              <td class="py-1">
-                                <p class="card-text font-weight-bold mb-25">Interlectual property</p>
-                                <p class="card-text text-nowrap">
-                                  Formulating a company Name
-                                </p>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">60,000.00</span>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">30</span>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">300,000.00</span>
-                              </td>
-                            </tr>
-                            <tr class="border-bottom">
-                              <td class="py-1">
-                                <p class="card-text font-weight-bold mb-25">Copyright</p>
-                                <p class="card-text text-nowrap">Make a Copyright for a company</p>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">60,000.00</span>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">20</span>
-                              </td>
-                              <td class="py-1">
-                                <span class="font-weight-bold">200,000.00</span>
-                              </td>
-                              
-                            </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <div class="card-body invoice-padding invoice-product-details">
+                        <form class="source-item">
+                          <div data-repeater-list="group-a">
+                            <div class="repeater-wrapper" data-repeater-item>
+                              <div class="row">
+                                <div class="col-12 d-flex product-details-border position-relative pr-0">
+                                  <div class="row w-100 pr-lg-0 pr-1 py-2">
+                                    <div class="col-lg-5 col-12 mb-lg-0 mb-2 mt-lg-0 mt-2">
+                                      <p class="card-text col-title mb-md-50 mb-0">Item</p>
+                                      <select class="form-control item-details">
+                                        <option value="App Design">App Design</option>
+                                        <option value="App Customization" selected>App Customization</option>
+                                        <option value="ABC Template">ABC Template</option>
+                                        <option value="App Development">App Development</option>
+                                      </select>
+                                      <textarea class="form-control mt-2" rows="1">Customization & Bug Fixes</textarea>
+                                    </div>
+                                    <div class="col-lg-3 col-12 my-lg-0 my-2">
+                                      <p class="card-text col-title mb-md-2 mb-0">Cost</p>
+                                      <input type="number" class="form-control" value="24" placeholder="24" />
+                                      <div class="mt-2">
+                                        <span>Discount:</span>
+                                        <span class="discount">0%</span>
+                                        <span class="tax-1 ml-50" data-toggle="tooltip" data-placement="top" title="Tax 1">0%</span>
+                                        <span class="tax-2 ml-50" data-toggle="tooltip" data-placement="top" title="Tax 2">0%</span>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-2 col-12 my-lg-0 my-2">
+                                      <p class="card-text col-title mb-md-2 mb-0">Qty</p>
+                                      <input type="number" class="form-control" value="1" placeholder="1" />
+                                    </div>
+                                    <div class="col-lg-2 col-12 mt-lg-0 mt-2">
+                                      <p class="card-text col-title mb-md-50 mb-0">Price</p>
+                                      <p class="card-text mb-0">$24.00</p>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="d-flex flex-column align-items-center justify-content-between border-left invoice-product-actions py-50 px-25"
+                                  >
+                                    <i data-feather="x" class="cursor-pointer font-medium-3" data-repeater-delete></i>
+                                    <div class="dropdown">
+                                      <i
+                                        class="cursor-pointer more-options-dropdown mr-0"
+                                        data-feather="settings"
+                                        role="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                      >
+                                      </i>
+                                      <div
+                                        class="dropdown-menu dropdown-menu-right item-options-menu p-1"
+                                        aria-labelledby="dropdownMenuButton"
+                                      >
+                                        <div class="form-group">
+                                          <label for="discount-input" class="form-label">Discount(%)</label>
+                                          <input type="number" class="form-control" id="discount-input" />
+                                        </div>
+                                        <div class="form-row mt-50">
+                                          <div class="form-group col-md-6">
+                                            <label for="tax-1-input" class="form-label">Tax 1</label>
+                                            <select name="tax-1-input" id="tax-1-input" class="form-control tax-select">
+                                              <option value="0%" selected>0%</option>
+                                              <option value="1%">1%</option>
+                                              <option value="10%">10%</option>
+                                              <option value="18%">18%</option>
+                                              <option value="40%">40%</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <label for="tax-2-input" class="form-label">Tax 2</label>
+                                            <select name="tax-2-input" id="tax-2-input" class="form-control tax-select">
+                                              <option value="0%" selected>0%</option>
+                                              <option value="1%">1%</option>
+                                              <option value="10%">10%</option>
+                                              <option value="18%">18%</option>
+                                              <option value="40%">40%</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="dropdown-divider my-1"></div>
+                                        <div class="d-flex justify-content-between">
+                                          <button type="button" class="btn btn-outline-primary btn-apply-changes">Apply</button>
+                                          <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-1">
+                            <div class="col-12 px-0">
+                              <button type="button" class="btn btn-primary btn-sm btn-add-new" data-repeater-create>
+                                <i data-feather="plus" class="mr-25"></i>
+                                <span class="align-middle">Add Item</span>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
             
                     <div class="card-body invoice-padding pb-0">
                       <div class="row invoice-sales-total-wrapper">
-                        <div class="col-md-6 order-md-1 order-2 mt-md-0 mt-3">
-                          <p class="card-text mb-0">
-                            <span class="font-weight-bold">Salesperson:</span> <span class="ml-75">Augostino Mrema</span>
-                          </p>
-                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <label for="salesperson" class="form-label">Salesperson:</label>
+                            <input type="text" class="form-control ml-50" id="salesperson" placeholder="Edward Crowley" />
+                          </div>
                         <div class="col-md-6 d-flex justify-content-end order-md-2 order-1">
                           <div class="invoice-total-wrapper">
                             <div class="invoice-total-item">
@@ -327,15 +384,16 @@
             
                     <!-- Invoice Note starts -->
                     <div class="card-body invoice-padding pt-0">
-                      <div class="row">
-                        <div class="col-12">
-                          <span class="font-weight-bold">Note:</span>
-                          <span
-                            >It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance
-                            projects. Thank You!</span
-                          >
-                        </div>
-                      </div>
+                        <div class="row">
+                            <div class="col-12">
+                              <div class="form-group mb-2">
+                                <label for="note" class="form-label font-weight-bold">Note:</label>
+                                <textarea class="form-control" rows="2" id="note">
+                It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance projects. Thank You!</textarea
+                                >
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <!-- Invoice Note ends -->
                   </div>
@@ -347,7 +405,7 @@
                   <div class="card">
                     <div class="card-body">
                       
-                     
+                      
                       <a class="btn btn-outline-secondary btn-block mb-75" href="print.receipt.html" target="_blank">
                         Print
                       </a>
