@@ -186,6 +186,26 @@
                 <label class="custom-control-label" for="select-all">View All</label>
               </div>
               <div class="calendar-events-filter">
+                <div class="custom-control custom-control-primary custom-checkbox mb-1">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input input-filter"
+                    id="personal"
+                    data-value="personal"
+                    checked
+                  />
+                  <label class="custom-control-label" for="Ip">Trade Mark</label>
+                </div>
+                <div class="custom-control custom-control-success custom-checkbox mb-1">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input input-filter"
+                    id="personal"
+                    data-value="personal"
+                    checked
+                  />
+                  <label class="custom-control-label" for="Ip">Copyright</label>
+                </div>
                 <div class="custom-control custom-control-danger custom-checkbox mb-1">
                   <input
                     type="checkbox"
@@ -194,9 +214,19 @@
                     data-value="personal"
                     checked
                   />
-                  <label class="custom-control-label" for="Ip">Interlectual Property</label>
+                  <label class="custom-control-label" for="Ip">Patents</label>
                 </div>
-                <div class="custom-control custom-control-primary custom-checkbox mb-1">
+                <div class="custom-control custom-control-info custom-checkbox mb-1">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input input-filter"
+                    id="personal"
+                    data-value="personal"
+                    checked
+                  />
+                  <label class="custom-control-label" for="Ip">Trade Secret</label>
+                </div>
+                <div class="custom-control custom-control-warning custom-checkbox mb-1">
                   <input
                     type="checkbox"
                     class="custom-control-input input-filter"
@@ -206,7 +236,7 @@
                   />
                   <label class="custom-control-label" for="casses">Casses</label>
                 </div>
-                <div class="custom-control custom-control-warning custom-checkbox mb-1">
+                <div class="custom-control custom-control-danger custom-checkbox mb-1">
                   <input
                     type="checkbox"
                     class="custom-control-input input-filter"
@@ -260,8 +290,13 @@
               <div class="form-group">
                 <label for="select-label" class="form-label">Label</label>
                 <select class="select2 select-label form-control w-100" id="select-label" name="select-label">
-                  <option data-label="primary" value="Interlectual property" selected>Interlectual Property</option>
-                  <option data-label="danger" value="Casses">Casses</option>
+                  <option data-label="custom-control-primary" value="Interlectual property" selected>Trade Mark</option>
+                  <option data-label="custom-control-success" value="Interlectual property" selected>Copyright</option>
+                  <option data-label="custom-control-danger" value="Interlectual property" selected>Patents</option>
+                  <option data-label="custom-control-info" value="Interlectual property" selected>Trade Secret</option>
+                  
+                  <option data-label="warning" value="Casses">Casses</option>
+                 
                   
                  
                   
