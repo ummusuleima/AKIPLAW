@@ -175,7 +175,7 @@
 
 <!-- Basic table -->
 <div class="container-xl"> 
-  <div class="table-responsive">
+ 
     <div class="table-wrapper">
       <div class="table-title  "style="background-color: 
       #162045;">
@@ -233,7 +233,7 @@
           
            <td>
             
-              <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+              <a href="#deleteEmployeeModal" class="delete bg-light-success" data-toggle="modal">New</a>
             </td>              
             <td>
               <a href="./seniorview.html"  class="View" style="color: blue;"  title="View Instruction"><i data-feather='eye'></i></a>
@@ -263,11 +263,11 @@
           
            <td>
             
-              <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">New</a>
+              <a href="#deleteEmployeeModal" class="delete bg-light-danger" data-toggle="modal">Returned</a>
             </td>
           </td>              
           <td>
-            <a href="./seniorview.html"  class="View" style="color: blue;"   title="View Instruction"><i data-feather='eye'></i></a>
+            <a href="./seniorview2.html"  class="View" style="color: blue;"   title="View Instruction"><i data-feather='eye'></i></a>
             <!-- <a href="#editEmployeeModal"  class="Approve" style="color: green;"  data-toggle="modal"  title="Approval"><i data-feather='thumbs-up'></i></a>
             <a href="#editEmployeeModal" class="Reject" style="color: red;" data-toggle="modal"  title="Reject"><i data-feather='thumbs-down'></i></a> -->
           
@@ -284,7 +284,7 @@
   </table>
       
     </div>
-  </div>        
+        
 </div>
 
   <!-- view Modal HTML -->
@@ -373,7 +373,7 @@
   </div>     
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="submit" class="btn btn-info" value="Save">
+            <input type="submit" class="btn btn-info" data-dismiss="modal" value="Save">
           </div>
         </form>
       </div>
@@ -388,7 +388,7 @@
     <!-- END: Content-->
 
  
-     <!-- Modal HTML -->
+     <!-- edit instruction -->
      <div id="editApplicationModal" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -405,7 +405,7 @@
             <div class="row">
               <div class="col-md-6 col-12">
                 <div class="form-group">
-                  <label for="full-name-column">Full Name</label>
+                  <label for="full-name-column">client Name</label>
                   <input
                     type="text"
                     id="full-name-column"
@@ -416,27 +416,16 @@
                 </div>
               </div>
               
-              <div class="col-md-6 col-12">
-                 <div class="form-group">
-                  <label for="email-id-column">Email</label>
-                  <input
-                    type="email"
-                    id="email-id-column"
-                    class="form-control"
-                    name="email-id-column"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
+              
               <div class="col-md-6 col-12">
                 <div class="form-group">
-                  <label for="country-floating">Phone Number</label>
+                  <label for="country-floating">Country</label>
                   <input
                     type="text"
                     id="country-floating"
                     class="form-control"
                     name="country-floating"
-                    placeholder="Phone#"
+                    placeholder="Country"
                   />
                 </div>
               </div>
@@ -474,7 +463,7 @@
     </div>     
             <div class="modal-footer">
               <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-              <input type="submit" class="btn btn-info" value="Save">
+              <input type="submit" class="btn btn-info" data-dismiss="modal" value="Save">
             </div>
           </form>
         </div>
