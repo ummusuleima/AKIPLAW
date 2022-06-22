@@ -197,7 +197,7 @@
           </div>
           <div class="card-body pb-0">
             <h5 class="section-label mb-1">
-              <span class="align-middle">Filter</span>
+              <span class="align-middle">Instructions</span>
             </h5>
             <div class="custom-control custom-checkbox mb-1">
               <input type="checkbox" class="custom-control-input select-all" id="select-all" checked />
@@ -302,24 +302,20 @@
         <div class="modal-body flex-grow-1 pb-sm-0 pb-3">
           <form class="event-form needs-validation" data-ajax="false" novalidate>
             <div class="form-group">
+              <label for="select-label" class="form-label">Instruction</label>
+              <select class="form-control" id="basicSelect">
+                <option data-label="custom-control-primary" value="Interlectual property" selected>Trade Mark</option>
+                <option data-label="custom-control-success" value="Interlectual property" selected>Copyright</option>
+                <option data-label="custom-control-danger" value="Interlectual property" selected>Patents</option>
+                <option data-label="custom-control-info" value="Interlectual property" selected>Trade Secret</option>
+                <option data-label="warning" value="Casses">Casses</option> 
+              </select>
+            </div>
+            <div class="form-group">
               <label for="title" class="form-label">Title</label>
               <input type="text" class="form-control" id="title" name="title" placeholder="Event Title" required />
             </div>
-            <div class="form-group">
-              <label for="select-label" class="form-label">Label</label>
-              <select class="select2 select-label form-control w-100" id="select-label" name="select-label">
-                <option data-label="custom-control-success" value="Interlectual property" selected>Trade Mark</option>
-                <option data-label="custom-control-success" value="Interlectual property" selected>Copyright</option>
-                <option data-label="custom-control-success" value="Interlectual property" selected>Patents</option>
-                <option data-label="custom-control-success" value="Interlectual property" selected>Trade Secret</option>
-                
-                <option data-label="danger" value="Casses">Casses</option>
-               
-                
-               
-                
-              </select>
-            </div>
+            
             <div class="form-group position-relative">
               <label for="start-date" class="form-label">Start Date</label>
               <input type="text" class="form-control" id="start-date" name="start-date" placeholder="Start Date" />
@@ -338,21 +334,7 @@
                 <label class="custom-control-label" for="customSwitch3">All Day</label>
               </div>
             </div>
-            <!-- <div class="form-group">
-              <label for="event-url" class="form-label">Event URL</label>
-              <input type="url" class="form-control" id="event-url" placeholder="https://www.google.com/" />
-            </div> -->
-            <!-- <div class="form-group select2-primary">
-              <label for="event-guests" class="form-label">Add Guests</label>
-              <select class="select2 select-add-guests form-control w-100" id="event-guests" multiple>
-                <option data-avatar="1-small.png" value="Jane Foster">Jane Foster</option>
-                <option data-avatar="3-small.png" value="Donna Frank">Donna Frank</option>
-                <option data-avatar="5-small.png" value="Gabrielle Robertson">Gabrielle Robertson</option>
-                <option data-avatar="7-small.png" value="Lori Spears">Lori Spears</option>
-                <option data-avatar="9-small.png" value="Sandy Vega">Sandy Vega</option>
-                <option data-avatar="11-small.png" value="Cheryl May">Cheryl May</option>
-              </select>
-            </div> -->
+           
             <div class="form-group">
               <label for="event-location" class="form-label">Location</label>
               <input type="text" class="form-control" id="event-location" placeholder="Enter Location" />
