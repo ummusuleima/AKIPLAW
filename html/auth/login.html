@@ -89,7 +89,7 @@
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
                           <option value="">Select Subsystem</option>
-                          <option value="receptionist">Receptionist</option>
+                          <option value="secretary">Secretary</option>
                           <option value="senior.advocate">Senior.advocate</option>
                           <option value="advocate">Advocate</option> 
                           <option value="admin">Admin</option>    
@@ -102,7 +102,7 @@
               <label class="custom-control-label" for="remember-me"> Remember Me </label>
             </div>
           </div> -->
-          <a href="../../receptionist/index.html" class="btn btn-dark2 btn-block disabled"  tabindex="4" id="login" style=" color: #e4e4e4;">Login</a>
+          <a href="../../secretary/index.html" class="btn btn-dark2 btn-block disabled"  tabindex="4" id="login" style=" color: #e4e4e4;">Login</a>
           
           
         </form>
@@ -148,8 +148,8 @@
           var optionSelected = $("option:selected", this);
           var valueSelected = this.value;
 
-          if (valueSelected == "receptionist") {
-            $("#login").attr("href", "../receptionist/index.html");
+          if (valueSelected == "secretary") {
+            $("#login").attr("href", "../secretary/index.html");
             $("#login").removeClass("disabled");
           } else if(valueSelected == "senior.advocate"){
             $("#login").attr("href", "../senior.advocate/senior.index.html");
